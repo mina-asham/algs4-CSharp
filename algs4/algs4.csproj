@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="algs4\Average.cs" />
     <Compile Include="algs4\Bag.cs" />
     <Compile Include="algs4\UF.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

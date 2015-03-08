@@ -85,12 +85,26 @@ namespace algs4.stdlib
         {
             StringBuilder builder = new StringBuilder();
             SkipWhitespace();
-            while (!char.IsWhiteSpace((char)Reader.Peek()))
-            {
-                builder.Append((char)Reader.Read());
-            }
+            ReadCharactersWhilePossible(builder);
             SkipWhitespace();
             return builder.ToString();
+        }
+
+        /// <summary>
+        /// Helper for ReadString method, to read characters while possible
+        /// </summary>
+        /// <param name="builder"></param>
+        private static void ReadCharactersWhilePossible(StringBuilder builder)
+        {
+            while (!char.IsWhiteSpace((char)Reader.Peek()))
+            {
+                int character = Reader.Read();
+                if (character < 0)
+                {
+                    break;
+                }
+                builder.Append((char)character);
+            }
         }
 
         /// <summary>
