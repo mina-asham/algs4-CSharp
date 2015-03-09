@@ -247,6 +247,7 @@ namespace algs4.stdlib
         /// them as an array of integers.
         /// </summary>
         /// <returns>all remaining integers, as an array</returns>
+        [Obsolete("For more consistency, use ReadAllInts")]
         public static int[] ReadInts()
         {
             return ReadAllInts();
@@ -256,6 +257,7 @@ namespace algs4.stdlib
         /// Reads all remaining tokens, parses them as doubles, and returns
         /// them as an array of doubles.</summary>
         /// <returns>all remaining doubles, as an array</returns>
+        [Obsolete("For more consistency, use ReadAllDoubles")]
         public static double[] ReadDoubles()
         {
             return ReadAllDoubles();
@@ -265,6 +267,7 @@ namespace algs4.stdlib
         /// Reads all remaining tokens and returns them as an array of strings.
         /// </summary>
         /// <returns>all remaining tokens, as an array of strings</returns>
+        [Obsolete("For more consistency, use ReadAllStrings")]
         public static String[] ReadStrings()
         {
             return ReadAllStrings();
