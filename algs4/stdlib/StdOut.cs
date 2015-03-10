@@ -40,7 +40,7 @@ namespace algs4.stdlib
         /// Write an object to standard output and then terminate the line.
         /// </summary>
         /// <param name="x">object to print</param>
-        public static void PrintLn(Object x)
+        public static void PrintLn(object x)
         {
             Writer.WriteLine(x);
         }
@@ -126,10 +126,10 @@ namespace algs4.stdlib
         }
 
         /// <summary>
-        /// Write an Object to standard output and flush standard output.
+        /// Write an object to standard output and flush standard output.
         /// </summary>
         /// <param name="x">object to print</param>
-        public static void Print(Object x)
+        public static void Print(object x)
         {
             Writer.Write(x);
             Writer.Flush();
@@ -221,7 +221,7 @@ namespace algs4.stdlib
         /// </summary>
         /// <param name="format">string format</param>
         /// <param name="args">arguments to fill in string format</param>
-        public static void Print(string format, params object[] args)
+        public static void PrintF(string format, params object[] args)
         {
             Writer.Write(format, args);
             Writer.Flush();
@@ -231,13 +231,13 @@ namespace algs4.stdlib
         /// This method is just here to test the class
         /// </summary>
         /// <param name="args">Main arguments</param>
-        public static void RunMain(String[] args)
+        public static void RunMain(string[] args)
         {
             // write to stdout
             PrintLn("Test");
             PrintLn(17);
             PrintLn(true);
-            Print("{0:0.000000}\n", 1.0 / 7.0);
+            PrintF("{0:0.000000}\n", 1.0 / 7.0);
         }
     }
 }

@@ -54,7 +54,7 @@ namespace algs4.stdlib
         /// Reads and returns the next line, excluding the line separator if present.
         /// </summary>
         /// <returns>the next line, excluding the line separator if present</returns>
-        public static String ReadLine()
+        public static string ReadLine()
         {
             return Reader.ReadLine();
         }
@@ -72,16 +72,16 @@ namespace algs4.stdlib
         /// Reads and returns the remainder of the input, as a string.
         /// </summary>
         /// <returns>the remainder of the input, as a string</returns>
-        public static String ReadAll()
+        public static string ReadAll()
         {
             return Reader.ReadToEnd();
         }
 
         /// <summary>
-        /// Reads the next token  and returns the String.
+        /// Reads the next token  and returns the string.
         /// </summary>
-        /// <returns>the next String</returns>
-        public static String ReadString()
+        /// <returns>the next string</returns>
+        public static string ReadString()
         {
             StringBuilder builder = new StringBuilder();
             SkipWhitespace();
@@ -179,7 +179,7 @@ namespace algs4.stdlib
         /// <returns>the next boolean on standard input</returns>
         public static bool ReadBoolean()
         {
-            String s = ReadString().ToLower();
+            string s = ReadString().ToLower();
             if (s.Equals(bool.TrueString, StringComparison.OrdinalIgnoreCase) || s == "1")
             {
                 return true;
@@ -195,7 +195,7 @@ namespace algs4.stdlib
         /// Reads all remaining tokens from standard input and returns them as an array of strings.
         /// </summary>
         /// <returns>all remaining tokens on standard input, as an array of strings</returns>
-        public static String[] ReadAllStrings()
+        public static string[] ReadAllStrings()
         {
             return ReadAll().Trim().Split();
         }
@@ -204,9 +204,9 @@ namespace algs4.stdlib
         /// Reads all remaining lines from standard input and returns them as an array of strings.
         /// </summary>
         /// <returns>all remaining lines on standard input, as an array of strings</returns>
-        public static String[] ReadAllLines()
+        public static string[] ReadAllLines()
         {
-            List<String> lines = new List<String>();
+            List<string> lines = new List<string>();
             while (HasNextLine())
             {
                 lines.Add(ReadLine());
@@ -221,7 +221,7 @@ namespace algs4.stdlib
         /// <returns>all remaining integers on standard input, as an array</returns>
         public static int[] ReadAllInts()
         {
-            String[] fields = ReadAllStrings();
+            string[] fields = ReadAllStrings();
             int[] vals = new int[fields.Length];
             for (int i = 0; i < fields.Length; i++)
                 vals[i] = int.Parse(fields[i]);
@@ -235,7 +235,7 @@ namespace algs4.stdlib
         /// <returns>all remaining doubles on standard input, as an array</returns>
         public static double[] ReadAllDoubles()
         {
-            String[] fields = ReadAllStrings();
+            string[] fields = ReadAllStrings();
             double[] vals = new double[fields.Length];
             for (int i = 0; i < fields.Length; i++)
                 vals[i] = double.Parse(fields[i]);
@@ -268,7 +268,7 @@ namespace algs4.stdlib
         /// </summary>
         /// <returns>all remaining tokens, as an array of strings</returns>
         [Obsolete("For more consistency, use ReadAllStrings")]
-        public static String[] ReadStrings()
+        public static string[] ReadStrings()
         {
             return ReadAllStrings();
         }
@@ -277,10 +277,10 @@ namespace algs4.stdlib
         /// Interactive test of basic functionality.
         /// </summary>
         /// <param name="args">Main arguments</param>
-        public static void RunMain(String[] args)
+        public static void RunMain(string[] args)
         {
             Console.WriteLine("Type a string: ");
-            String s = ReadString();
+            string s = ReadString();
             Console.WriteLine("Your string was: " + s);
             Console.WriteLine();
 
