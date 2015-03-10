@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using algs4.stdlib;
+﻿using algs4.stdlib;
 
 namespace algs4.algs4
 {
