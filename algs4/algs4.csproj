@@ -39,11 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="algs4\Alphabet.cs" />
     <Compile Include="algs4\Average.cs" />
     <Compile Include="algs4\Bag.cs" />
+    <Compile Include="algs4\Cat.cs" />
+    <Compile Include="algs4\Count.cs" />
     <Compile Include="algs4\Set.cs" />
     <Compile Include="algs4\StaticSETofInts.cs" />
     <Compile Include="algs4\UF.cs" />
+    <Compile Include="algs4\WeightedQuickUnionUF.cs" />
     <Compile Include="algs4\WhiteFilter.cs" />
     <Compile Include="algs4\Whitelist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
