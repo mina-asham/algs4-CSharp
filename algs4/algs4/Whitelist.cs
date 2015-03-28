@@ -9,8 +9,8 @@ namespace algs4.algs4
         /// a command-line argument. Reads in integers from standard input and
         /// prints to standard output those integers that are not in the file.
         /// </summary>
-        /// <param name="args"></param>
-        public static void Main(string[] args)
+        /// <param name="args">Main arguments</param>
+        public static void RunMain(string[] args)
         {
             In input = new In(args[0]);
             int[] white = input.ReadAllInts();
