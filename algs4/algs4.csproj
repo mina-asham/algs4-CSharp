@@ -42,22 +42,35 @@
     <Compile Include="algs4\Alphabet.cs" />
     <Compile Include="algs4\Average.cs" />
     <Compile Include="algs4\Bag.cs" />
+    <Compile Include="algs4\BinaryDump.cs" />
     <Compile Include="algs4\Cat.cs" />
     <Compile Include="algs4\Count.cs" />
     <Compile Include="algs4\Set.cs" />
     <Compile Include="algs4\StaticSETofInts.cs" />
+    <Compile Include="algs4\Stopwatch.cs" />
+    <Compile Include="algs4\StopwatchCPU.cs" />
+    <Compile Include="algs4\ThreeSum.cs" />
+    <Compile Include="algs4\ThreeSumFast.cs" />
     <Compile Include="algs4\UF.cs" />
+    <Compile Include="algs4\Vector.cs" />
     <Compile Include="algs4\WeightedQuickUnionUF.cs" />
     <Compile Include="algs4\WhiteFilter.cs" />
     <Compile Include="algs4\Whitelist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="stdlib\BinaryIn.cs" />
     <Compile Include="stdlib\BinaryOut.cs" />
+    <Compile Include="stdlib\BinaryStdIn.cs" />
+    <Compile Include="stdlib\BinaryStdOut.cs" />
     <Compile Include="stdlib\In.cs" />
     <Compile Include="stdlib\Out.cs" />
+    <Compile Include="stdlib\StdArrayIO.cs" />
     <Compile Include="stdlib\StdIn.cs" />
     <Compile Include="stdlib\StdOut.cs" />
     <Compile Include="stdlib\StdRandom.cs" />
+    <Compile Include="stdlib\StdStats.cs" />
+    <Compile Include="stdlib\Stopwatch.cs" />
+    <Compile Include="stdlib\Test.cs" />
+    <Compile Include="stdlib\UnicodeTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="stdlib\InTest.txt">
