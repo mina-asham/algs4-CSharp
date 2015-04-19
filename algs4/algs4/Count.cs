@@ -5,12 +5,12 @@ namespace algs4.algs4
 {
     public class Count
     {
-        public static void RunMain(String[] args)
+        public static void RunMain(string[] args)
         {
             Alphabet alpha = new Alphabet(args[0]);
             int r = alpha.R();
             int[] count = new int[r];
-            String a = StdIn.ReadAll();
+            string a = StdIn.ReadAll();
             int n = a.Length;
             for (int i = 0; i < n; i++)
             {

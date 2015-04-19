@@ -159,7 +159,7 @@ namespace algs4.stdlib
         }
 
         /// <summary>
-        /// Returns a real number from a gaussian distribution with given mean and stddev
+        /// Returns a real number from a gaussian distribution with given mean and StdDev
         /// </summary>
         /// <param name="mean"></param>
         /// <param name="stddev"></param>
@@ -196,7 +196,7 @@ namespace algs4.stdlib
             {
                 throw new ArgumentException("Parameter lambda must be positive");
             }
-            if (Double.IsInfinity(lambda))
+            if (double.IsInfinity(lambda))
             {
                 throw new ArgumentException("Parameter lambda must not be infinite");
             }
@@ -403,7 +403,7 @@ namespace algs4.stdlib
         /// Unit test.
         /// </summary>
         /// <param name="args">Main arguments</param>
-        public static void RunMain(String[] args)
+        public static void RunMain(string[] args)
         {
             int n = int.Parse(args[0]);
             if (args.Length == 2)
@@ -423,8 +423,8 @@ namespace algs4.stdlib
                 StdOut.PrintLn();
             }
 
-            String[] a = "A B C D E F G".Split(' ');
-            foreach (String s in a)
+            string[] a = "A B C D E F G".Split(' ');
+            foreach (string s in a)
             {
                 StdOut.Print(s + " ");
             }

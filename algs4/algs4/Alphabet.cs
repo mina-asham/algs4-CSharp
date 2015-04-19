@@ -27,7 +27,7 @@ namespace algs4.algs4
         /// Create a new Alphabet from sequence of characters in string.
         /// </summary>
         /// <param name="alpha">Alphabet characters</param>
-        public Alphabet(String alpha)
+        public Alphabet(string alpha)
         {
             // check that alphabet contains no duplicate chars
             bool[] unicode = new bool[Char.MaxValue];
@@ -129,11 +129,11 @@ namespace algs4.algs4
         }
 
         /// <summary>
-        /// convert String s over this alphabet into a base-r integer
+        /// convert string s over this alphabet into a base-r integer
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
-        public int[] ToIndices(String s)
+        public int[] ToIndices(string s)
         {
             char[] source = s.ToCharArray();
             int[] target = new int[s.Length];
@@ -159,11 +159,11 @@ namespace algs4.algs4
         }
 
         /// <summary>
-        /// Convert base-r integer into a String over this alphabet
+        /// Convert base-r integer into a string over this alphabet
         /// </summary>
         /// <param name="indices"></param>
         /// <returns></returns>
-        public String ToChars(int[] indices)
+        public string ToChars(int[] indices)
         {
             StringBuilder s = new StringBuilder(indices.Length);
             for (int i = 0; i < indices.Length; i++)
@@ -174,18 +174,18 @@ namespace algs4.algs4
         }
 
 
-        public static void RunMain(String[] args)
+        public static void RunMain(string[] args)
         {
             int[] encoded1 = Base64.ToIndices("NowIsTheTimeForAllGoodMen");
-            String decoded1 = Base64.ToChars(encoded1);
+            string decoded1 = Base64.ToChars(encoded1);
             StdOut.PrintLn(decoded1);
 
             int[] encoded2 = DNA.ToIndices("AACGAACGGTTTACCCCG");
-            String decoded2 = DNA.ToChars(encoded2);
+            string decoded2 = DNA.ToChars(encoded2);
             StdOut.PrintLn(decoded2);
 
             int[] encoded3 = Decimal.ToIndices("01234567890123456789");
-            String decoded3 = Decimal.ToChars(encoded3);
+            string decoded3 = Decimal.ToChars(encoded3);
             StdOut.PrintLn(decoded3);
         }
     }

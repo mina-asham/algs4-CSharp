@@ -13,14 +13,14 @@ namespace algs4.algs4
             In input = new In(args[0]);
             while (!input.IsEmpty())
             {
-                String word = input.ReadString();
+                string word = input.ReadString();
                 set.Add(word);
             }
 
             // read in string from standard input, printing out all exceptions
             while (!StdIn.IsEmpty())
             {
-                String word = StdIn.ReadString();
+                string word = StdIn.ReadString();
                 if (set.Contains(word))
                     StdOut.PrintLn(word);
             }

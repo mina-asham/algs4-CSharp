@@ -112,7 +112,7 @@ namespace algs4.algs4
         /// and print the pair to standard output.
         /// </summary>
         /// <param name="args">Main arguments</param>
-        public static void RunMain(String[] args)
+        public static void RunMain(string[] args)
         {
             int n = StdIn.ReadInt();
             WeightedQuickUnionUF uf = new WeightedQuickUnionUF(n);

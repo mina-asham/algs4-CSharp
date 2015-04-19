@@ -14,13 +14,13 @@ namespace algs4.algs4
         /// specified as the last command-line argument.
         /// </summary>
         /// <param name="args">Main arugments</param>
-        public static void RunMain(String[] args)
+        public static void RunMain(string[] args)
         {
             Out output = new Out(args[args.Length - 1]);
             for (int i = 0; i < args.Length - 1; i++)
             {
                 In input = new In(args[i]);
-                String s = input.ReadAll();
+                string s = input.ReadAll();
                 output.PrintLn(s);
                 input.Close();
             }

@@ -266,7 +266,7 @@ namespace algs4.algs4
         /// Returns a string representation of this set.
         /// </summary>
         /// <returns>a string representation of this set, with the keys separated by single spaces</returns>
-        public override String ToString()
+        public override string ToString()
         {
             StringBuilder s = new StringBuilder();
             foreach (T key in this)
@@ -318,7 +318,7 @@ namespace algs4.algs4
             StdOut.PrintLn();
 
             // print out all keys in the set in lexicographic order
-            foreach (String s in set)
+            foreach (string s in set)
             {
                 StdOut.PrintLn(s);
             }
