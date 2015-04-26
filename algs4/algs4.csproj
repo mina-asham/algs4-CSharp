@@ -32,6 +32,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +49,7 @@
     <Compile Include="algs4\Count.cs" />
     <Compile Include="algs4\Set.cs" />
     <Compile Include="algs4\StaticSETofInts.cs" />
+    <Compile Include="stdlib\StdDraw.cs" />
     <Compile Include="algs4\Stopwatch.cs" />
     <Compile Include="algs4\StopwatchCPU.cs" />
     <Compile Include="algs4\ThreeSum.cs" />

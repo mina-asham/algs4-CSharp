@@ -310,7 +310,6 @@ namespace algs4.stdlib
             return sum / length;
         }
 
-
         /// <summary>
         /// Returns the sample standard deviation in the array a[], NaN if no such value.
         /// </summary>
@@ -420,11 +419,11 @@ namespace algs4.stdlib
         /// Plots the points (i, a[i]) to standard draw.
         /// </summary>
         /// <param name="a"></param>
-        public static void PlotPoints(double[] a)
+        public static void PlotPoints(float[] a)
         {
             int n = a.Length;
             StdDraw.SetXscale(0, n - 1);
-            StdDraw.SetPenRadius(1.0 / (3.0 * n));
+            StdDraw.SetPenRadius(1.0f / (3.0f * n));
             for (int i = 0; i < n; i++)
             {
                 StdDraw.Point(i, a[i]);
@@ -435,7 +434,7 @@ namespace algs4.stdlib
         /// Plots line segments connecting points (i, a[i]) to standard draw.
         /// </summary>
         /// <param name="a"></param>
-        public static void PlotLines(double[] a)
+        public static void PlotLines(float[] a)
         {
             int n = a.Length;
             StdDraw.SetXscale(0, n - 1);
@@ -450,16 +449,15 @@ namespace algs4.stdlib
         /// Plots bars from (0, a[i]) to (i, a[i]) to standard draw.
         /// </summary>
         /// <param name="a"></param>
-        public static void PlotBars(double[] a)
+        public static void PlotBars(float[] a)
         {
             int n = a.Length;
             StdDraw.SetXscale(0, n - 1);
             for (int i = 0; i < n; i++)
             {
-                StdDraw.FilledRectangle(i, a[i] / 2, .25, a[i] / 2);
+                StdDraw.FilledRectangle(i, a[i] / 2, .25f, a[i] / 2);
             }
         }
-
 
         /// <summary>
         /// Test client.
@@ -477,39 +475,6 @@ namespace algs4.stdlib
             StdOut.PrintF("       var {0:0000000000.000}\n", Var(a));
             StdOut.PrintF("   stddevp {0:0000000000.000}\n", StdDevP(a));
             StdOut.PrintF("      VarP {0:0000000000.000}\n", VarP(a));
-        }
-
-        public class StdDraw
-        {
-            public static void SetXscale(int i, int i1)
-            {
-                throw new NotImplementedException();
-            }
-
-            public static void SetPenRadius()
-            {
-                throw new NotImplementedException();
-            }
-
-            public static void Line(int i, double d, int i1, double d1)
-            {
-                throw new NotImplementedException();
-            }
-
-            public static void FilledRectangle(int i, double d, double d1, double d2)
-            {
-                throw new NotImplementedException();
-            }
-
-            public static void SetPenRadius(double d)
-            {
-                throw new NotImplementedException();
-            }
-
-            public static void Point(int i, double d)
-            {
-                throw new NotImplementedException();
-            }
         }
     }
 }
