@@ -1,6 +1,4 @@
-﻿using System;
-using algs4.stdlib;
-using Stopwatch = algs4.stdlib.Stopwatch;
+﻿using algs4.stdlib;
 
 namespace algs4.algs4
 {

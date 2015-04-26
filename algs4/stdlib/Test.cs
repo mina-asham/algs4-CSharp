@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace algs4.stdlib
+﻿namespace algs4.stdlib
 {
     public static class Test
     {
