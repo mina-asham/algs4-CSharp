@@ -129,7 +129,6 @@ namespace algs4.stdlib
             Output.Write(s);
         }
 
-
         /// <summary>
         /// Test client.
         /// </summary>

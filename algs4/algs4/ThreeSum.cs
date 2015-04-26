@@ -51,7 +51,6 @@ namespace algs4.algs4
             return cnt;
         }
 
-
         /// <summary>
         /// Reads in a sequence of integers from a file, specified as a command-line argument;
         /// counts the number of triples sum to exactly zero; prints out the time to perform

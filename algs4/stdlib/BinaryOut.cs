@@ -60,7 +60,6 @@ namespace algs4.stdlib
             }
         }
 
-
         /// <summary>
         /// Flush the binary output stream, padding 0s if number of bits written so far
         /// is not a multiple of 8.
@@ -92,7 +91,6 @@ namespace algs4.stdlib
                 Console.WriteLine(e.StackTrace);
             }
         }
-
 
         /// <summary>
         /// Write the specified bit to the binary output stream.
@@ -147,7 +145,6 @@ namespace algs4.stdlib
         {
             _output.Write(x);
         }
-
 
         /// <summary>
         /// Write the 16-bit int to the binary output stream.

@@ -16,7 +16,6 @@ namespace algs4.algs4
             _start = Convert.ToInt64((DateTime.UtcNow - epoch).TotalMilliseconds);
         }
 
-
         /// <summary>
         /// Returns the elapsed time (in seconds) since this object was created.
         /// </summary>

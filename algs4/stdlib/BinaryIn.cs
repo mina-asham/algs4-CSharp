@@ -136,7 +136,6 @@ namespace algs4.stdlib
             return _input.ReadChar();
         }
 
-
         /// <summary>
         /// Read the remaining bytes of data from the binary input stream and return as a string.
         /// </summary>
@@ -145,7 +144,6 @@ namespace algs4.stdlib
         {
             return _input.ReadString();
         }
-
 
         /// <summary>
         /// Read the next 16 bits from the binary input stream and return as a 16-bit short.
@@ -164,7 +162,6 @@ namespace algs4.stdlib
         {
             return _input.ReadInt32();
         }
-
 
         /// <summary>
         /// Read the next 64 bits from the binary input stream and return as a 64-bit long.
@@ -192,7 +189,6 @@ namespace algs4.stdlib
         {
             return _input.ReadSingle();
         }
-
 
         /// <summary>
         /// Read the next 8 bits from the binary input stream and return as an 8-bit byte.

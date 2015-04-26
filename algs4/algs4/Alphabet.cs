@@ -184,7 +184,6 @@ namespace algs4.algs4
             return s.ToString();
         }
 
-
         public static void RunMain(string[] args)
         {
             int[] encoded1 = Base64.ToIndices("NowIsTheTimeForAllGoodMen");

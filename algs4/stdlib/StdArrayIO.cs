@@ -32,7 +32,6 @@
             StdOut.PrintLn();
         }
 
-
         /// <summary>
         /// Read in and return an M-by-N array of doubles from standard input.
         /// </summary>

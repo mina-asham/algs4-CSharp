@@ -16,7 +16,6 @@ namespace algs4.algs4
         /// </summary>
         private readonly double[] _data;
 
-
         /// <summary>
         /// Initializes a d-dimensional zero vector.
         /// </summary>

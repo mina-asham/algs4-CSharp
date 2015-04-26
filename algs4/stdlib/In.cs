@@ -58,7 +58,6 @@ namespace algs4.stdlib
             }
         }
 
-
         /// <summary>
         /// Create an input stream from a file.
         /// </summary>
@@ -74,7 +73,6 @@ namespace algs4.stdlib
                 Console.Error.WriteLine("Could not open " + file);
             }
         }
-
 
         /// <summary>
         /// Create an input stream from a filename or web page name.
