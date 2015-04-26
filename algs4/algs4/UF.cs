@@ -6,18 +6,18 @@ namespace algs4.algs4
     public class UF
     {
         /// <summary>
-        /// id[i] = parent of i
+        /// Where id[i] = parent of i
         /// </summary>
         private readonly int[] _id;
 
         /// <summary>
-        /// rank[i] = rank of subtree rooted at i
+        /// Where rank[i] = rank of subtree rooted at i
         /// (cannot be more than 31)
         /// </summary>
         private readonly byte[] _rank;
 
         /// <summary>
-        /// number of components
+        /// Number of components
         /// </summary>
         private int _count;
 

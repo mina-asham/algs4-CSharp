@@ -7,12 +7,12 @@ namespace algs4.algs4
     public class Bag<T> : IEnumerable<T>
     {
         /// <summary>
-        /// number of elements in bag
+        /// Number of elements in bag
         /// </summary>
         private int _n;
 
         /// <summary>
-        /// beinning of bag
+        /// Beginning of bag
         /// </summary>
         private Node<T> _first;
 

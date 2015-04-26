@@ -2,11 +2,8 @@
 
 namespace algs4.algs4
 {
-    public class Cat
+    public static class Cat
     {
-        // this class should not be instantiated
-        private Cat() { }
-
         /// <summary>
         /// Reads in a sequence of text files specified as the first command-line
         /// arguments, concatenates them, and writes the results to the file

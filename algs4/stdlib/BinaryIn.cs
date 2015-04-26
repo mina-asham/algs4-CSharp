@@ -9,7 +9,7 @@ namespace algs4.stdlib
     public class BinaryIn
     {
         /// <summary>
-        /// the input stream
+        /// The input stream
         /// </summary>
         private readonly BinaryReader _input;
 
@@ -22,7 +22,7 @@ namespace algs4.stdlib
         }
 
         /// <summary>
-        ///  Create a binary input stream from an InputStream.
+        /// Create a binary input stream from an InputStream.
         /// </summary>
         /// <param name="stream"></param>
         public BinaryIn(Stream stream)

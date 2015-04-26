@@ -7,7 +7,7 @@ namespace algs4.stdlib
     public class BinaryOut
     {
         /// <summary>
-        /// the output stream
+        /// The output stream
         /// </summary>
         private readonly BinaryWriter _output;
 
@@ -140,7 +140,7 @@ namespace algs4.stdlib
         }
 
         /// <summary>
-        ///  Write the 32-bit float to the binary output stream.
+        /// Write the 32-bit float to the binary output stream.
         /// </summary>
         /// <param name="x">the <tt>float</tt> to write.</param>
         public void Write(float x)
@@ -159,7 +159,7 @@ namespace algs4.stdlib
         }
 
         /// <summary>
-        ///  Write the 8-bit char to the binary output stream.
+        /// Write the 8-bit char to the binary output stream.
         /// </summary>
         /// <param name="x">the <tt>char</tt> to write.</param>
         public void Write(char x)
@@ -168,7 +168,7 @@ namespace algs4.stdlib
         }
 
         /// <summary>
-        ///  Write the string of 8-bit characters to the binary output stream.
+        /// Write the string of 8-bit characters to the binary output stream.
         /// </summary>
         /// <param name="s">the <tt>string</tt> to write.</param>
         public void Write(string s)

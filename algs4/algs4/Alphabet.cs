@@ -19,9 +19,20 @@ namespace algs4.algs4
         public static readonly Alphabet ExtendedASCII = new Alphabet(256);
         public static readonly Alphabet Unicode16 = new Alphabet(65536);
 
-        private readonly char[] _alphabet;     // the characters in the alphabet
-        private readonly int[] _inverse;       // indices
-        private readonly int _r;               // the radix of the alphabet
+        /// <summary>
+        /// The characters in the alphabet
+        /// </summary>
+        private readonly char[] _alphabet;
+
+        /// <summary>
+        /// Indices
+        /// </summary>
+        private readonly int[] _inverse;
+
+        /// <summary>
+        /// The radix of the alphabet
+        /// </summary>
+        private readonly int _r;
 
         /// <summary>
         /// Create a new Alphabet from sequence of characters in string.
@@ -82,7 +93,7 @@ namespace algs4.algs4
         }
 
         /// <summary>
-        /// is character c in the alphabet?
+        /// Is character c in the alphabet?
         /// </summary>
         /// <param name="c"></param>
         /// <returns></returns>
@@ -92,7 +103,7 @@ namespace algs4.algs4
         }
 
         /// <summary>
-        /// return radix r
+        /// Return radix r
         /// </summary>
         /// <returns></returns>
         public int R()
@@ -101,7 +112,7 @@ namespace algs4.algs4
         }
 
         /// <summary>
-        /// return number of bits to represent an index
+        /// Return number of bits to represent an index
         /// </summary>
         /// <returns></returns>
         public int LgR()
@@ -115,7 +126,7 @@ namespace algs4.algs4
         }
 
         /// <summary>
-        /// convert c to index between 0 and r-1.
+        /// Convert c to index between 0 and r-1.
         /// </summary>
         /// <param name="c"></param>
         /// <returns></returns>
@@ -129,7 +140,7 @@ namespace algs4.algs4
         }
 
         /// <summary>
-        /// convert string s over this alphabet into a base-r integer
+        /// Convert string s over this alphabet into a base-r integer
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
@@ -145,7 +156,7 @@ namespace algs4.algs4
         }
 
         /// <summary>
-        /// convert an index between 0 and r-1 into a char over this alphabet
+        /// Convert an index between 0 and r-1 into a char over this alphabet
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>

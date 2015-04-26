@@ -6,7 +6,7 @@ namespace algs4.algs4
     public class ThreeSumFast
     {
         /// <summary>
-        /// returns true if the sorted array a[] contains any duplicated integers
+        /// Returns true if the sorted array a[] contains any duplicated integers
         /// </summary>
         /// <param name="a"></param>
         /// <returns></returns>

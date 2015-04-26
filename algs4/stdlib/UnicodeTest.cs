@@ -6,12 +6,12 @@ namespace algs4.stdlib
     public class UnicodeTest
     {
         /// <summary>
-        /// number of Unicode characters to display per line
+        /// Number of Unicode characters to display per line
         /// </summary>
         private const int CharsPerLine = 16;
 
         /// <summary>
-        /// number of Unicode characters to display (basic multilingual plane)
+        /// Number of Unicode characters to display (basic multilingual plane)
         /// </summary>
         private const int MaxChar = 65536;
 

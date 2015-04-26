@@ -6,11 +6,10 @@ namespace algs4.stdlib
     public static class BinaryStdOut
     {
         /// <summary>
-        /// the output stream
+        /// The output stream
         /// </summary>
         private static readonly BinaryWriter Output;
 
-        // don't instantiate
         static BinaryStdOut()
         {
             Output = new BinaryWriter(Console.OpenStandardOutput());

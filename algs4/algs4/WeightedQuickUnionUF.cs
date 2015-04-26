@@ -5,11 +5,19 @@ namespace algs4.algs4
 {
     public class WeightedQuickUnionUF
     {
-        // parent[i] = parent of i
+        /// <summary>
+        /// Where parent[i] = parent of i
+        /// </summary>
         private readonly int[] _parent;
-        // size[i] = number of objects in subtree rooted at i
+
+        /// <summary>
+        /// WHere size[i] = number of objects in subtree rooted at i
+        /// </summary>
         private readonly int[] _size;
-        // number of components
+
+        /// <summary>
+        /// Number of components
+        /// </summary>
         private int _count;
 
         /// <summary>

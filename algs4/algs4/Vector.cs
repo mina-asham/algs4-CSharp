@@ -7,12 +7,12 @@ namespace algs4.algs4
     {
 
         /// <summary>
-        /// length of the vector
+        /// Length of the vector
         /// </summary>
         private readonly int _n;
 
         /// <summary>
-        /// array of vector's components
+        /// Array of vector's components
         /// </summary>
         private readonly double[] _data;
 

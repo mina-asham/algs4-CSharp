@@ -6,7 +6,7 @@ namespace algs4.stdlib
     public static class BinaryStdIn
     {
         /// <summary>
-        /// the input stream
+        /// The input stream
         /// </summary>
         private static readonly BinaryReader Input;
 

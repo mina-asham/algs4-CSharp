@@ -5,17 +5,17 @@ namespace algs4.stdlib
     public static class StdRandom
     {
         /// <summary>
-        /// pseudo-random number generator
+        /// Pseudo-random number generator
         /// </summary>
         private static Random _random;
 
         /// <summary>
-        /// pseudo-random number generator seed
+        /// Pseudo-random number generator seed
         /// </summary>
         private static int _seed;
 
         /// <summary>
-        /// static initializer
+        /// Static initializer
         /// </summary>
         static StdRandom()
         {
