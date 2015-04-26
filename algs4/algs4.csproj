@@ -47,8 +47,10 @@
     <Compile Include="algs4\BinaryDump.cs" />
     <Compile Include="algs4\Cat.cs" />
     <Compile Include="algs4\Count.cs" />
+    <Compile Include="algs4\PictureDump.cs" />
     <Compile Include="algs4\Set.cs" />
     <Compile Include="algs4\StaticSETofInts.cs" />
+    <Compile Include="stdlib\Picture.cs" />
     <Compile Include="stdlib\StdDraw.cs" />
     <Compile Include="algs4\Stopwatch.cs" />
     <Compile Include="algs4\StopwatchCPU.cs" />

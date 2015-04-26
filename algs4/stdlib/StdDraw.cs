@@ -5,6 +5,7 @@ using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Drawing.Text;
 using System.IO;
+using System.Net;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -836,25 +837,19 @@ namespace algs4.stdlib
         private static Image GetImage(string filename)
         {
             // to read from file
-            Bitmap icon = new Bitmap(filename, true);
-
-            // TODO: probably not needed
-            /*
-            // try to read from URL
-            if ((icon == null) || (icon.getImageLoadStatus() != MediaTracker.COMPLETE)) {
-                try {
-                    URL url = new URL(filename);
-                    icon = new ImageIcon(url);
-                } catch (Exception e) { / not a url / }
+            Bitmap icon = null;
+            try
+            {
+                icon = new Bitmap(filename, true);
             }
-
-            // in case file is inside a .jar
-            if ((icon == null) || (icon.getImageLoadStatus() != MediaTracker.COMPLETE)) {
-                URL url = StdDraw.class.getResource(filename);
-                if (url == null) throw new ArgumentException("image " + filename + " not found");
-                icon = new ImageIcon(url);
+            catch (ArgumentException)
+            {
+                Stream stream = WebRequest.Create(filename).GetResponse().GetResponseStream();
+                if (stream != null)
+                {
+                    icon = new Bitmap(stream);
+                }
             }
-            */
 
             return icon;
         }
