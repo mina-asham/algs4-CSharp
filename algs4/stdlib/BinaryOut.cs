@@ -122,7 +122,7 @@ namespace algs4.stdlib
         /// <summary>
         /// Write the 64-bit double to the binary output stream.
         /// </summary>
-        /// <param name="x">the <tt>double</tt> to write.</param>
+        /// <param name="x">the double to write.</param>
         public void Write(double x)
         {
             _output.Write(x);
@@ -131,7 +131,7 @@ namespace algs4.stdlib
         /// <summary>
         /// Write the 64-bit long to the binary output stream.
         /// </summary>
-        /// <param name="x">the <tt>long</tt> to write.</param>
+        /// <param name="x">the long to write.</param>
         public void Write(long x)
         {
             _output.Write(x);
@@ -140,7 +140,7 @@ namespace algs4.stdlib
         /// <summary>
         /// Write the 32-bit float to the binary output stream.
         /// </summary>
-        /// <param name="x">the <tt>float</tt> to write.</param>
+        /// <param name="x">the float to write.</param>
         public void Write(float x)
         {
             _output.Write(x);
@@ -149,7 +149,7 @@ namespace algs4.stdlib
         /// <summary>
         /// Write the 16-bit int to the binary output stream.
         /// </summary>
-        /// <param name="x">the <tt>short</tt> to write.</param>
+        /// <param name="x">the short to write.</param>
         public void Write(short x)
         {
             _output.Write(x);
@@ -158,7 +158,7 @@ namespace algs4.stdlib
         /// <summary>
         /// Write the 8-bit char to the binary output stream.
         /// </summary>
-        /// <param name="x">the <tt>char</tt> to write.</param>
+        /// <param name="x">the char to write.</param>
         public void Write(char x)
         {
             _output.Write(x);
@@ -167,7 +167,7 @@ namespace algs4.stdlib
         /// <summary>
         /// Write the string of 8-bit characters to the binary output stream.
         /// </summary>
-        /// <param name="s">the <tt>string</tt> to write.</param>
+        /// <param name="s">the string to write.</param>
         public void Write(string s)
         {
             _output.Write(s);

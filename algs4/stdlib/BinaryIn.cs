@@ -121,7 +121,7 @@ namespace algs4.stdlib
         /// <summary>
         /// Read the next bit of data from the binary input stream and return as a boolean.
         /// </summary>
-        /// <returns>the next bit of data from the binary input stream as a <tt>boolean</tt></returns>
+        /// <returns>the next bit of data from the binary input stream as a boolean</returns>
         public bool ReadBoolean()
         {
             return _input.ReadBoolean();
@@ -130,7 +130,7 @@ namespace algs4.stdlib
         /// <summary>
         /// Read the next 8 bits from the binary input stream and return as an 8-bit char.
         /// </summary>
-        /// <returns>the next 8 bits of data from the binary input stream as a <tt>char</tt></returns>
+        /// <returns>the next 8 bits of data from the binary input stream as a char</returns>
         public char ReadChar()
         {
             return _input.ReadChar();
@@ -139,7 +139,7 @@ namespace algs4.stdlib
         /// <summary>
         /// Read the remaining bytes of data from the binary input stream and return as a string.
         /// </summary>
-        /// <returns>the remaining bytes of data from the binary input stream as a <tt>string</tt></returns>
+        /// <returns>the remaining bytes of data from the binary input stream as a string</returns>
         public string Readstring()
         {
             return _input.ReadString();
@@ -148,7 +148,7 @@ namespace algs4.stdlib
         /// <summary>
         /// Read the next 16 bits from the binary input stream and return as a 16-bit short.
         /// </summary>
-        /// <returns>the next 16 bits of data from the binary standard input as a <tt>short</tt></returns>
+        /// <returns>the next 16 bits of data from the binary standard input as a short</returns>
         public short ReadShort()
         {
             return _input.ReadInt16();
@@ -157,7 +157,7 @@ namespace algs4.stdlib
         /// <summary>
         /// Read the next 32 bits from the binary input stream and return as a 32-bit int.
         /// </summary>
-        /// <returns>the next 32 bits of data from the binary input stream as a <tt>int</tt></returns>
+        /// <returns>the next 32 bits of data from the binary input stream as a int</returns>
         public int ReadInt()
         {
             return _input.ReadInt32();
@@ -166,7 +166,7 @@ namespace algs4.stdlib
         /// <summary>
         /// Read the next 64 bits from the binary input stream and return as a 64-bit long.
         /// </summary>
-        /// <returns>the next 64 bits of data from the binary input stream as a <tt>long</tt></returns>
+        /// <returns>the next 64 bits of data from the binary input stream as a long</returns>
         public long ReadLong()
         {
             return _input.ReadInt64();
@@ -175,7 +175,7 @@ namespace algs4.stdlib
         /// <summary>
         /// Read the next 64 bits from the binary input stream and return as a 64-bit double.
         /// </summary>
-        /// <returns>the next 64 bits of data from the binary input stream as a <tt>double</tt></returns>
+        /// <returns>the next 64 bits of data from the binary input stream as a double</returns>
         public double ReadDouble()
         {
             return _input.ReadDouble();
@@ -184,7 +184,7 @@ namespace algs4.stdlib
         /// <summary>
         /// Read the next 32 bits from standard input and return as a 32-bit float.
         /// </summary>
-        /// <returns>the next 32 bits of data from standard input as a <tt>float</tt></returns>
+        /// <returns>the next 32 bits of data from standard input as a float</returns>
         public float ReadFloat()
         {
             return _input.ReadSingle();
