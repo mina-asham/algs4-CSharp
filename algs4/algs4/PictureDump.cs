@@ -6,7 +6,7 @@ namespace algs4.algs4
 {
     public class PictureDump
     {
-        public static void RunMain(String[] args)
+        public static void RunMain(string[] args)
         {
             int width = int.Parse(args[0]);
             int height = int.Parse(args[1]);
