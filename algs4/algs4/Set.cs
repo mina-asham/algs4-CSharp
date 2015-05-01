@@ -34,7 +34,7 @@ namespace algs4.algs4
         /// <param name="key">the key to add</param>
         public void Add(T key)
         {
-            if (Equals(key, default(T)))
+            if (!typeof(T).IsValueType && Equals(key, default(T)))
             {
                 throw new NullReferenceException("called Add() with a null key");
             }
@@ -48,7 +48,7 @@ namespace algs4.algs4
         /// <returns>true if the set Contains key and false otherwise</returns>
         public bool Contains(T key)
         {
-            if (Equals(key, default(T)))
+            if (!typeof(T).IsValueType && Equals(key, default(T)))
             {
                 throw new NullReferenceException("called Contains() with a null key");
             }
@@ -62,7 +62,7 @@ namespace algs4.algs4
         /// <param name="key">the key</param>
         public void Delete(T key)
         {
-            if (Equals(key, default(T)))
+            if (!typeof(T).IsValueType && Equals(key, default(T)))
             {
                 throw new NullReferenceException("called delete() with a null key");
             }
@@ -136,7 +136,7 @@ namespace algs4.algs4
         /// <returns>the smallest key in the set greater than or equal to key</returns>
         public T Ceiling(T key)
         {
-            if (Equals(key, default(T)))
+            if (!typeof(T).IsValueType && Equals(key, default(T)))
             {
                 throw new NullReferenceException("called Ceiling() with a null key");
             }
@@ -155,7 +155,7 @@ namespace algs4.algs4
         /// <returns>the largest key in the set table less than or equal to key</returns>
         public T Floor(T key)
         {
-            if (Equals(key, default(T)))
+            if (!typeof(T).IsValueType && Equals(key, default(T)))
             {
                 throw new NullReferenceException("called Floor() with a null key");
             }
