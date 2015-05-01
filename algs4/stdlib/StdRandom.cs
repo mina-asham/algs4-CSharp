@@ -130,7 +130,6 @@ namespace algs4.stdlib
 
         /// <summary>
         /// Returns a boolean, which is true with probability .5, and false otherwise.
-        /// Returns a boolean, which is true with probability .5, and false otherwise.
         /// </summary>
         /// <returns></returns>
         public static bool Bernoulli()
