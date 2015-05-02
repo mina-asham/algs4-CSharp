@@ -23,7 +23,7 @@ namespace algs4.algs4
         /// Returns the value associated with the given key.
         /// </summary>
         /// <param name="key">the key</param>
-        /// <returns>the value associated with the given key if the key is in the symbol table and <tt>null</tt> if the key is not in the symbol table</returns>
+        /// <returns>the value associated with the given key if the key is in the symbol table and null if the key is not in the symbol table</returns>
         public TValue Get(TKey key)
         {
             if (!typeof(TKey).IsValueType && Equals(default(TKey), key))
@@ -36,7 +36,7 @@ namespace algs4.algs4
         /// <summary>
         /// Inserts the key-value pair into the symbol table, overwriting the old value
         /// with the new value if the key is already in the symbol table.
-        /// If the value is <tt>null</tt>, this effectively deletes the key from the symbol table.
+        /// If the value is null, this effectively deletes the key from the symbol table.
         /// </summary>
         /// <param name="key">the key</param>
         /// <param name="val">the value</param>
@@ -77,7 +77,7 @@ namespace algs4.algs4
         /// Does this symbol table contain the given key?
         /// </summary>
         /// <param name="key">the key</param>
-        /// <returns><tt>true</tt> if this symbol table contains <tt>key</tt> and <tt>false</tt> otherwise</returns>
+        /// <returns>true if this symbol table contains key and false otherwise</returns>
         public bool Contains(TKey key)
         {
             if (!typeof(TKey).IsValueType && Equals(default(TKey), key))
@@ -99,18 +99,18 @@ namespace algs4.algs4
         /// <summary>
         /// Is this symbol table empty?
         /// </summary>
-        /// <returns><tt>true</tt> if this symbol table is empty and <tt>false</tt> otherwise</returns>
+        /// <returns>true if this symbol table is empty and false otherwise</returns>
         public bool IsEmpty()
         {
             return Size() == 0;
         }
 
         /// <summary>
-        /// Returns all keys in the symbol table as an <tt>Iterable</tt>.
-        /// To iterate over all of the keys in the symbol table named <tt>st</tt>,
-        /// use the foreach notation: <tt>for (Key key : st.keys())</tt>.
+        /// Returns all keys in the symbol table as an Iterable.
+        /// To iterate over all of the keys in the symbol table named st,
+        /// use the foreach notation: for (Key key : st.keys()).
         /// </summary>
-        /// <returns>all keys in the sybol table as an <tt>Iterable</tt></returns>
+        /// <returns>all keys in the sybol table as an Iterable</returns>
         public IEnumerable<TKey> Keys()
         {
             return _st;
@@ -143,10 +143,10 @@ namespace algs4.algs4
         }
 
         /// <summary>
-        /// Returns the smallest key in the symbol table greater than or equal to <tt>key</tt>.
+        /// Returns the smallest key in the symbol table greater than or equal to key.
         /// </summary>
         /// <param name="key">the key</param>
-        /// <returns>the smallest key in the symbol table greater than or equal to <tt>key</tt></returns>
+        /// <returns>the smallest key in the symbol table greater than or equal to key</returns>
         public TKey Ceiling(TKey key)
         {
             if (!typeof(TKey).IsValueType && Equals(key, default(TKey)))
@@ -162,10 +162,10 @@ namespace algs4.algs4
         }
 
         /// <summary>
-        /// Returns the largest key in the symbol table less than or equal to <tt>key</tt>.
+        /// Returns the largest key in the symbol table less than or equal to key.
         /// </summary>
         /// <param name="key">the key</param>
-        /// <returns>the largest key in the symbol table less than or equal to <tt>key</tt></returns>
+        /// <returns>the largest key in the symbol table less than or equal to key</returns>
         public TKey Floor(TKey key)
         {
             if (!typeof(TKey).IsValueType && Equals(key, default(TKey)))
@@ -181,7 +181,7 @@ namespace algs4.algs4
         }
 
         /// <summary>
-        /// Unit tests the <tt>ST</tt> data type.
+        /// Unit tests the ST data type.
         /// </summary>
         /// <param name="args"></param>
         public static void RunMain(string[] args)
