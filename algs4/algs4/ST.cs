@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Management.Instrumentation;
 using algs4.stdlib;
 
 namespace algs4.algs4
@@ -125,7 +124,7 @@ namespace algs4.algs4
         {
             if (IsEmpty())
             {
-                throw new InstanceNotFoundException("called min() with empty symbol table");
+                throw new KeyNotFoundException("called min() with empty symbol table");
             }
             return _st.Min;
         }
@@ -138,7 +137,7 @@ namespace algs4.algs4
         {
             if (IsEmpty())
             {
-                throw new InstanceNotFoundException("called max() with empty symbol table");
+                throw new KeyNotFoundException("called max() with empty symbol table");
             }
             return _st.Max;
         }
