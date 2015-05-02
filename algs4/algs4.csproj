@@ -60,6 +60,7 @@
     <Compile Include="algs4\EdgeWeightedDirectedCycle.cs" />
     <Compile Include="algs4\MinPQ.cs" />
     <Compile Include="algs4\PictureDump.cs" />
+    <Compile Include="algs4\RedBlackBST.cs" />
     <Compile Include="algs4\Set.cs" />
     <Compile Include="algs4\ST.cs" />
     <Compile Include="algs4\StaticSETofInts.cs" />
