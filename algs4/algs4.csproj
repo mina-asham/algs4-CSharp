@@ -42,9 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="algs4\AcyclicLP.cs" />
+    <Compile Include="algs4\AcyclicSP.cs" />
+    <Compile Include="algs4\AdjMatrixWeightedDigraph.cs" />
     <Compile Include="algs4\Alphabet.cs" />
+    <Compile Include="algs4\Arbitrage.cs" />
     <Compile Include="algs4\Average.cs" />
     <Compile Include="algs4\Bag.cs" />
+    <Compile Include="algs4\BellmanFordSP.cs" />
     <Compile Include="algs4\BinaryDump.cs" />
     <Compile Include="algs4\Cat.cs" />
     <Compile Include="algs4\Count.cs" />
@@ -54,12 +58,16 @@
     <Compile Include="algs4\DirectedEdge.cs" />
     <Compile Include="algs4\EdgeWeightedDigraph.cs" />
     <Compile Include="algs4\EdgeWeightedDirectedCycle.cs" />
+    <Compile Include="algs4\MinPQ.cs" />
     <Compile Include="algs4\PictureDump.cs" />
     <Compile Include="algs4\Set.cs" />
     <Compile Include="algs4\ST.cs" />
     <Compile Include="algs4\StaticSETofInts.cs" />
     <Compile Include="algs4\SymbolDigraph.cs" />
+    <Compile Include="algs4\TopM.cs" />
     <Compile Include="algs4\Topological.cs" />
+    <Compile Include="algs4\Transaction.cs" />
+    <Compile Include="algs4\TST.cs" />
     <Compile Include="stdlib\Picture.cs" />
     <Compile Include="stdlib\StdDraw.cs" />
     <Compile Include="algs4\Stopwatch.cs" />
