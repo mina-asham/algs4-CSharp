@@ -70,19 +70,18 @@ namespace algs4.algs4
         /// <returns>an iterator that iterates over the items in the bag in arbitrary order</returns>
         public IEnumerator<T> GetEnumerator()
         {
-            return new ListEnumerator<T>(_first);
+            return new ListEnumerator(_first);
         }
 
         /// <summary>
         /// An iterator
         /// </summary>
-        /// <typeparam name="TInner"></typeparam>
-        private class ListEnumerator<TInner> : IEnumerator<TInner>
+        private class ListEnumerator : IEnumerator<T>
         {
-            private Node<TInner> _first;
-            private Node<TInner> _current;
+            private Node<T> _first;
+            private Node<T> _current;
 
-            public ListEnumerator(Node<TInner> first)
+            public ListEnumerator(Node<T> first)
             {
                 _first = first;
                 Reset();
@@ -105,10 +104,10 @@ namespace algs4.algs4
 
             public void Reset()
             {
-                _current = new Node<TInner> { Next = _first };
+                _current = new Node<T> { Next = _first };
             }
 
-            public TInner Current
+            public T Current
             {
                 get { return _current.Item; }
             }
