@@ -96,12 +96,12 @@ namespace algs4.stdlib
         /// <summary>
         /// For mouse synchronization
         /// </summary>
-        private static readonly Object MouseLock = new Object();
+        private static readonly object MouseLock = new object();
 
         /// <summary>
         /// For keyboard synchronization
         /// </summary>
-        private static readonly Object KeyLock = new Object();
+        private static readonly object KeyLock = new object();
 
         /// <summary>
         /// Default font

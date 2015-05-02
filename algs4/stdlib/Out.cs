@@ -88,7 +88,7 @@ namespace algs4.stdlib
         /// Print an object and then terminate the line.
         /// </summary>
         /// <param name="x"></param>
-        public void PrintLn(Object x)
+        public void PrintLn(object x)
         {
             Console.WriteLine(x);
         }
@@ -168,7 +168,7 @@ namespace algs4.stdlib
         /// Print an object and then flush the output stream.
         /// </summary>
         /// <param name="x"></param>
-        public void Print(Object x)
+        public void Print(object x)
         {
             Console.Write(x);
             _output.Flush();

@@ -341,7 +341,7 @@ namespace algs4.stdlib
         /// <param name="a"></param>
         /// <param name="lo"></param>
         /// <param name="hi"></param>
-        public static void Shuffle(Object[] a, int lo, int hi)
+        public static void Shuffle(object[] a, int lo, int hi)
         {
             if (lo < 0 || lo > hi || hi >= a.Length)
             {
@@ -350,7 +350,7 @@ namespace algs4.stdlib
             for (int i = lo; i <= hi; i++)
             {
                 int r = i + Uniform(hi - i + 1);     // between i and hi
-                Object temp = a[i];
+                object temp = a[i];
                 a[i] = a[r];
                 a[r] = temp;
             }
