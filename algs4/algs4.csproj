@@ -65,9 +65,11 @@
     <Compile Include="algs4\GraphGenerator.cs" />
     <Compile Include="algs4\MinPQ.cs" />
     <Compile Include="algs4\PictureDump.cs" />
+    <Compile Include="algs4\Queue.cs" />
     <Compile Include="algs4\RedBlackBST.cs" />
     <Compile Include="algs4\Set.cs" />
     <Compile Include="algs4\ST.cs" />
+    <Compile Include="algs4\Stack.cs" />
     <Compile Include="algs4\StaticSETofInts.cs" />
     <Compile Include="algs4\SymbolDigraph.cs" />
     <Compile Include="algs4\TopM.cs" />
