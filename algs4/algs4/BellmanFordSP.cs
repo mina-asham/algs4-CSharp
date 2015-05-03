@@ -57,7 +57,7 @@ namespace algs4.algs4
             _queue = new Queue<int>();
             _queue.Enqueue(s);
             _onQueue[s] = true;
-            while (_queue.Count != 0 && !HasNegativeCycle())
+            while (_queue.Size() != 0 && !HasNegativeCycle())
             {
                 int v = _queue.Dequeue();
                 _onQueue[v] = false;

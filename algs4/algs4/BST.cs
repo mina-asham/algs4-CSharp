@@ -494,7 +494,7 @@ namespace algs4.algs4
             Queue<TKey> keys = new Queue<TKey>();
             Queue<Node> queue = new Queue<Node>();
             queue.Enqueue(_root);
-            while (queue.Count != 0)
+            while (queue.Size() != 0)
             {
                 Node x = queue.Dequeue();
                 if (x == null)
