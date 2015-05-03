@@ -50,6 +50,7 @@
     <Compile Include="algs4\Bag.cs" />
     <Compile Include="algs4\BellmanFordSP.cs" />
     <Compile Include="algs4\BinaryDump.cs" />
+    <Compile Include="algs4\BST.cs" />
     <Compile Include="algs4\Cat.cs" />
     <Compile Include="algs4\Count.cs" />
     <Compile Include="algs4\DepthFirstOrder.cs" />
