@@ -54,10 +54,13 @@
     <Compile Include="algs4\Count.cs" />
     <Compile Include="algs4\DepthFirstOrder.cs" />
     <Compile Include="algs4\Digraph.cs" />
+    <Compile Include="algs4\DigraphGenerator.cs" />
     <Compile Include="algs4\DirectedCycle.cs" />
     <Compile Include="algs4\DirectedEdge.cs" />
     <Compile Include="algs4\EdgeWeightedDigraph.cs" />
     <Compile Include="algs4\EdgeWeightedDirectedCycle.cs" />
+    <Compile Include="algs4\Graph.cs" />
+    <Compile Include="algs4\GraphGenerator.cs" />
     <Compile Include="algs4\MinPQ.cs" />
     <Compile Include="algs4\PictureDump.cs" />
     <Compile Include="algs4\RedBlackBST.cs" />
