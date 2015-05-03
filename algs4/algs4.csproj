@@ -58,6 +58,7 @@
     <Compile Include="algs4\DigraphGenerator.cs" />
     <Compile Include="algs4\DirectedCycle.cs" />
     <Compile Include="algs4\DirectedEdge.cs" />
+    <Compile Include="algs4\Edge.cs" />
     <Compile Include="algs4\EdgeWeightedDigraph.cs" />
     <Compile Include="algs4\EdgeWeightedDirectedCycle.cs" />
     <Compile Include="algs4\Graph.cs" />
