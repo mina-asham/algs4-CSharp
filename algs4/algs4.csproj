@@ -66,6 +66,7 @@
     <Compile Include="algs4\GraphGenerator.cs" />
     <Compile Include="algs4\MinPQ.cs" />
     <Compile Include="algs4\PictureDump.cs" />
+    <Compile Include="algs4\Point2D.cs" />
     <Compile Include="algs4\Queue.cs" />
     <Compile Include="algs4\RedBlackBST.cs" />
     <Compile Include="algs4\Set.cs" />
