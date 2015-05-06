@@ -389,7 +389,7 @@ namespace algs4.algs4
         /// Return a string representation of this point.
         /// </summary>
         /// <returns>a string representation of this point in the format (x, y)</returns>
-        public override String ToString()
+        public override string ToString()
         {
             return "(" + _x + ", " + _y + ")";
         }
@@ -426,7 +426,7 @@ namespace algs4.algs4
         /// Unit tests the point data type.
         /// </summary>
         /// <param name="args"></param>
-        public static void RunMain(String[] args)
+        public static void RunMain(string[] args)
         {
             int x0 = int.Parse(args[0]);
             int y0 = int.Parse(args[1]);
