@@ -39,7 +39,6 @@ namespace algs4.algs4
         public FlowNetwork(int v, int e)
             : this(v)
         {
-
             if (e < 0)
             {
                 throw new ArgumentException("Number of edges must be nonnegative");
@@ -64,7 +63,6 @@ namespace algs4.algs4
         public FlowNetwork(In input)
             : this(input.ReadInt())
         {
-
             int e = input.ReadInt();
             if (e < 0)
             {

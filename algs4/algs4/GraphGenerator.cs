@@ -408,7 +408,10 @@ namespace algs4.algs4
             MinPQ<int> pq = new MinPQ<int>();
             for (int vertex = 0; vertex < v; vertex++)
             {
-                if (degree[vertex] == 1) pq.Insert(vertex);
+                if (degree[vertex] == 1)
+                {
+                    pq.Insert(vertex);
+                }
             }
 
             // repeatedly DelMin() degree 1 vertex that has the minimum index

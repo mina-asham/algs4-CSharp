@@ -298,7 +298,8 @@ namespace algs4.stdlib
         {
             for (int i = 0; i < a.Length; i++)
             {
-                int r = i + Uniform(a.Length - i);     // between i and N-1
+                // between i and N-1
+                int r = i + Uniform(a.Length - i);
                 object temp = a[i];
                 a[i] = a[r];
                 a[r] = temp;
@@ -313,7 +314,8 @@ namespace algs4.stdlib
         {
             for (int i = 0; i < a.Length; i++)
             {
-                int r = i + Uniform(a.Length - i);     // between i and N-1
+                // between i and N-1
+                int r = i + Uniform(a.Length - i);
                 double temp = a[i];
                 a[i] = a[r];
                 a[r] = temp;
@@ -328,7 +330,8 @@ namespace algs4.stdlib
         {
             for (int i = 0; i < a.Length; i++)
             {
-                int r = i + Uniform(a.Length - i);     // between i and N-1
+                // between i and N-1
+                int r = i + Uniform(a.Length - i);
                 int temp = a[i];
                 a[i] = a[r];
                 a[r] = temp;
@@ -349,7 +352,8 @@ namespace algs4.stdlib
             }
             for (int i = lo; i <= hi; i++)
             {
-                int r = i + Uniform(hi - i + 1);     // between i and hi
+                // between i and hi
+                int r = i + Uniform(hi - i + 1);
                 object temp = a[i];
                 a[i] = a[r];
                 a[r] = temp;
@@ -370,7 +374,8 @@ namespace algs4.stdlib
             }
             for (int i = lo; i <= hi; i++)
             {
-                int r = i + Uniform(hi - i + 1);     // between i and hi
+                // between i and hi
+                int r = i + Uniform(hi - i + 1);
                 double temp = a[i];
                 a[i] = a[r];
                 a[r] = temp;
@@ -391,7 +396,8 @@ namespace algs4.stdlib
             }
             for (int i = lo; i <= hi; i++)
             {
-                int r = i + Uniform(hi - i + 1);     // between i and hi
+                // between i and hi
+                int r = i + Uniform(hi - i + 1);
                 int temp = a[i];
                 a[i] = a[r];
                 a[r] = temp;

@@ -286,7 +286,7 @@ namespace algs4.algs4
 
             // insert some keys
             set.Add("www.cs.princeton.edu");
-            set.Add("www.cs.princeton.edu");    // overwrite old value
+            set.Add("www.cs.princeton.edu"); // overwrite old value
             set.Add("www.princeton.edu");
             set.Add("www.math.princeton.edu");
             set.Add("www.yale.edu");

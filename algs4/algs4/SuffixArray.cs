@@ -33,10 +33,12 @@ namespace algs4.algs4
                 Text = text;
                 Index = index;
             }
+
             public int Length()
             {
                 return Text.Length - Index;
             }
+
             public char CharAt(int i)
             {
                 return Text[Index + i];

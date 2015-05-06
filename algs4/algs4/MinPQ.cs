@@ -57,7 +57,9 @@ namespace algs4.algs4
         /// Initializes an empty priority queue using the given comparator.
         /// </summary>
         /// <param name="comparator">the order to use when comparing keys</param>
-        public MinPQ(Comparer<TKey> comparator) : this(1, comparator) { }
+        public MinPQ(Comparer<TKey> comparator) : this(1, comparator)
+        {
+        }
 
         /// <summary>
         /// Initializes a priority queue from the array of keys.
@@ -164,7 +166,6 @@ namespace algs4.algs4
             return min;
         }
 
-
         #region Helper functions to restore the heap invariant.
 
         private void Swim(int k)
@@ -195,7 +196,9 @@ namespace algs4.algs4
         }
 
         #endregion
+
         #region Helper functions for compares and swaps.
+
         private bool Greater(int i, int j)
         {
             if (_comparator == null)
@@ -228,10 +231,19 @@ namespace algs4.algs4
         /// <returns></returns>
         private bool IsMinHeap(int k)
         {
-            if (k > _n) return true;
+            if (k > _n)
+            {
+                return true;
+            }
             int left = 2 * k, right = 2 * k + 1;
-            if (left <= _n && Greater(k, left)) return false;
-            if (right <= _n && Greater(k, right)) return false;
+            if (left <= _n && Greater(k, left))
+            {
+                return false;
+            }
+            if (right <= _n && Greater(k, right))
+            {
+                return false;
+            }
             return IsMinHeap(left) && IsMinHeap(right);
         }
 
@@ -260,6 +272,7 @@ namespace algs4.algs4
             /// Create a new pq
             /// </summary>
             private MinPQ<TKey> _copy;
+
             private MinPQ<TKey> _minPq;
 
             public TKey Current { get; private set; }
@@ -312,6 +325,7 @@ namespace algs4.algs4
                 _minPq = null;
             }
         }
+
         #endregion
 
         /// <summary>

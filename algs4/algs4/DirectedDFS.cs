@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using algs4.stdlib;
 
 namespace algs4.algs4
@@ -86,7 +85,6 @@ namespace algs4.algs4
         /// <param name="args"></param>
         public static void RunMain(string[] args)
         {
-
             // read in digraph from command-line argument
             In input = new In(args[0]);
             Digraph g = new Digraph(input);

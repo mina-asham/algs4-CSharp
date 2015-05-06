@@ -182,6 +182,7 @@ namespace algs4.algs4
             {
                 _current = _first;
             }
+
             public void Dispose()
             {
                 _current = null;

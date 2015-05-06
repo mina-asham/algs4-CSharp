@@ -25,7 +25,5 @@ namespace algs4.stdlib
             long now = Convert.ToInt64((DateTime.UtcNow - epoch).TotalMilliseconds);
             return (now - _start) / 1000.0;
         }
-
     }
-
 }

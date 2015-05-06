@@ -21,7 +21,9 @@ namespace algs4.algs4
             {
                 int key = StdIn.ReadInt();
                 if (!set.Contains(key))
+                {
                     StdOut.PrintLn(key);
+                }
             }
         }
     }

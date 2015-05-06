@@ -193,7 +193,6 @@ namespace algs4.algs4
                 throw new InvalidOperationException("Symbol table underflow");
             }
             _root = DeleteMax(_root);
-
         }
 
         private Node DeleteMax(Node x)
@@ -331,7 +330,10 @@ namespace algs4.algs4
 
         private Node Ceiling(Node x, TKey key)
         {
-            if (x == null) return null;
+            if (x == null)
+            {
+                return null;
+            }
             int cmp = key.CompareTo(x.Key);
             if (cmp == 0)
             {
@@ -652,5 +654,4 @@ namespace algs4.algs4
             }
         }
     }
-
 }

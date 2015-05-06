@@ -10,6 +10,5 @@
                 StdOut.PrintLn(lines[i]);
             }
         }
-
     }
 }

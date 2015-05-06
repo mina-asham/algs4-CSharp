@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using algs4.stdlib;
+﻿using algs4.stdlib;
 
 namespace algs4.algs4
 {
@@ -17,6 +15,7 @@ namespace algs4.algs4
             int m = int.Parse(args[0]);
             MinPQ<Transaction> pq = new MinPQ<Transaction>(m + 1);
 
+            // top M entries are on the PQ
             while (StdIn.HasNextLine())
             {
                 // Create an entry from the next line and put on the PQ. 
@@ -29,7 +28,7 @@ namespace algs4.algs4
                 {
                     pq.DelMin();
                 }
-            }   // top M entries are on the PQ
+            }
 
             // print entries on PQ in reverse order
             Stack<Transaction> stack = new Stack<Transaction>();

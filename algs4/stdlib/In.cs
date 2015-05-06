@@ -330,7 +330,9 @@ namespace algs4.stdlib
             string[] fields = ReadAllStrings();
             int[] vals = new int[fields.Length];
             for (int i = 0; i < fields.Length; i++)
+            {
                 vals[i] = int.Parse(fields[i]);
+            }
             return vals;
         }
 
@@ -344,7 +346,9 @@ namespace algs4.stdlib
             string[] fields = ReadAllStrings();
             double[] vals = new double[fields.Length];
             for (int i = 0; i < fields.Length; i++)
+            {
                 vals[i] = double.Parse(fields[i]);
+            }
             return vals;
         }
 
@@ -436,7 +440,10 @@ namespace algs4.stdlib
                 input = new In(urlName);
                 Console.WriteLine(input.ReadAll());
             }
-            catch (Exception e) { Console.WriteLine(e); }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
             Console.WriteLine();
 
             // read one line at a time from URL
@@ -451,7 +458,10 @@ namespace algs4.stdlib
                     Console.WriteLine(s);
                 }
             }
-            catch (Exception e) { Console.WriteLine(e); }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
             Console.WriteLine();
 
             // read one string at a time from URL
@@ -466,7 +476,10 @@ namespace algs4.stdlib
                     Console.WriteLine(s);
                 }
             }
-            catch (Exception e) { Console.WriteLine(e); }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
             Console.WriteLine();
 
             // read one line at a time from file input current directory
@@ -481,7 +494,10 @@ namespace algs4.stdlib
                     Console.WriteLine(s);
                 }
             }
-            catch (Exception e) { Console.WriteLine(e); }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
             Console.WriteLine();
 
             // read one line at a time from file using relative path
@@ -496,7 +512,10 @@ namespace algs4.stdlib
                     Console.WriteLine(s);
                 }
             }
-            catch (Exception e) { Console.WriteLine(e); }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
             Console.WriteLine();
 
             // read one char at a time
@@ -511,7 +530,10 @@ namespace algs4.stdlib
                     Console.Write(c);
                 }
             }
-            catch (Exception e) { Console.WriteLine(e); }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
             Console.WriteLine();
             Console.WriteLine();
 
@@ -527,7 +549,10 @@ namespace algs4.stdlib
                     Console.WriteLine(s);
                 }
             }
-            catch (Exception e) { Console.WriteLine(e); }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
             Console.WriteLine();
 
             // read one line at a time from absolute Windows path
@@ -543,7 +568,10 @@ namespace algs4.stdlib
                 }
                 Console.WriteLine();
             }
-            catch (Exception e) { Console.WriteLine(e); }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
             Console.WriteLine();
         }
     }

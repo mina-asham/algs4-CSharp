@@ -21,9 +21,10 @@ namespace algs4.algs4
             {
                 string word = StdIn.ReadString();
                 if (set.Contains(word))
+                {
                     StdOut.PrintLn(word);
+                }
             }
         }
     }
-
 }

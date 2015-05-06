@@ -22,7 +22,6 @@ namespace algs4.stdlib
             catch (IOException e)
             {
                 Console.WriteLine(e.StackTrace);
-
             }
         }
 
@@ -48,7 +47,6 @@ namespace algs4.stdlib
             catch (IOException e)
             {
                 Console.WriteLine(e.StackTrace);
-
             }
         }
 

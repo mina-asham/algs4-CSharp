@@ -19,6 +19,7 @@ namespace algs4.algs4
         /**
          * Returns the elapsed CPU time (in seconds) since the object was created.
          */
+
         public double ElapsedTime()
         {
             long now = GetThreadTotalProcessorTime();
@@ -41,5 +42,4 @@ namespace algs4.algs4
         [DllImport("Kernel32", EntryPoint = "GetCurrentThreadId", ExactSpelling = true)]
         private static extern int GetCurrentWin32ThreadId();
     }
-
 }

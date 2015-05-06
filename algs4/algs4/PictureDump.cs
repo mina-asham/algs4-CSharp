@@ -1,5 +1,4 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 using algs4.stdlib;
 
 namespace algs4.algs4
@@ -21,8 +20,14 @@ namespace algs4.algs4
                     {
                         count++;
                         bool bit = BinaryStdIn.ReadBoolean();
-                        if (bit) pic.Set(j, i, Color.Black);
-                        else pic.Set(j, i, Color.White);
+                        if (bit)
+                        {
+                            pic.Set(j, i, Color.Black);
+                        }
+                        else
+                        {
+                            pic.Set(j, i, Color.White);
+                        }
                     }
                 }
             }

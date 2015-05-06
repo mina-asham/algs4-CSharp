@@ -115,7 +115,10 @@ namespace algs4.algs4
                 int first = -1, last = -1;
                 foreach (int v in Cycle())
                 {
-                    if (first == -1) first = v;
+                    if (first == -1)
+                    {
+                        first = v;
+                    }
                     last = v;
                 }
                 if (first != last)

@@ -11,8 +11,11 @@ namespace algs4.algs4
         /// <param name="args">Main arguments</param>
         public static void RunMain(string[] args)
         {
-            int count = 0;      // number of input values
-            double sum = 0.0;   // sum of input values
+            // number of input values
+            int count = 0;
+
+            // sum of input values
+            double sum = 0.0;
 
             // read data and compute statistics
             while (!StdIn.IsEmpty())

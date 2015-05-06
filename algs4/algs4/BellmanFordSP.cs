@@ -86,7 +86,9 @@ namespace algs4.algs4
                     }
                 }
                 if (_cost++ % g.V() == 0)
+                {
                     FindNegativeCycle();
+                }
             }
         }
 
@@ -163,7 +165,10 @@ namespace algs4.algs4
             {
                 throw new InvalidOperationException("Negative cost cycle exists");
             }
-            if (!HasPathTo(v)) return null;
+            if (!HasPathTo(v))
+            {
+                return null;
+            }
             Stack<DirectedEdge> path = new Stack<DirectedEdge>();
             for (DirectedEdge e = _edgeTo[v]; e != null; e = _edgeTo[e.From()])
             {
@@ -210,7 +215,10 @@ namespace algs4.algs4
                 }
                 for (int v = 0; v < g.V(); v++)
                 {
-                    if (v == s) continue;
+                    if (v == s)
+                    {
+                        continue;
+                    }
                     if (_edgeTo[v] == null && !double.IsPositiveInfinity(_distTo[v]))
                     {
                         Console.Error.WriteLine("distTo[] and edgeTo[] inconsistent");
@@ -235,10 +243,16 @@ namespace algs4.algs4
                 // check that all edges e = v->w on SPT satisfy distTo[w] == distTo[v] + e.Weight()
                 for (int w = 0; w < g.V(); w++)
                 {
-                    if (_edgeTo[w] == null) continue;
+                    if (_edgeTo[w] == null)
+                    {
+                        continue;
+                    }
                     DirectedEdge e = _edgeTo[w];
                     int v = e.From();
-                    if (w != e.To()) return false;
+                    if (w != e.To())
+                    {
+                        return false;
+                    }
                     if (Math.Abs(_distTo[v] + e.Weight() - _distTo[w]) > double.Epsilon)
                     {
                         Console.Error.WriteLine("edge " + e + " on shortest path not tight");
@@ -268,7 +282,9 @@ namespace algs4.algs4
             if (sp.HasNegativeCycle())
             {
                 foreach (DirectedEdge e in sp.NegativeCycle())
+                {
                     StdOut.PrintLn(e);
+                }
             }
 
             // print shortest paths

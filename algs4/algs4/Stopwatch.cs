@@ -4,7 +4,6 @@ namespace algs4.algs4
 {
     public class Stopwatch
     {
-
         private readonly long _start;
 
         /// <summary>
@@ -26,7 +25,5 @@ namespace algs4.algs4
             long now = Convert.ToInt64((DateTime.UtcNow - epoch).TotalMilliseconds);
             return (now - _start) / 1000.0;
         }
-
     }
-
 }

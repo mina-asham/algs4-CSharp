@@ -40,7 +40,6 @@ namespace algs4.algs4
         public Graph(In input)
             : this(input.ReadInt())
         {
-
             int e = input.ReadInt();
             if (e < 0)
             {

@@ -88,7 +88,10 @@ namespace algs4.algs4
         /// <returns>a shortest path from the source vertex s to vertex v   as an IEnumerable of edges, and null if no such path</returns>
         public IEnumerable<DirectedEdge> PathTo(int v)
         {
-            if (!HasPathTo(v)) return null;
+            if (!HasPathTo(v))
+            {
+                return null;
+            }
             Stack<DirectedEdge> path = new Stack<DirectedEdge>();
             for (DirectedEdge e = _edgeTo[v]; e != null; e = _edgeTo[e.From()])
             {

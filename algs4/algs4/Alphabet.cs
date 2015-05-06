@@ -14,7 +14,9 @@ namespace algs4.algs4
         public static readonly Alphabet Lowercase = new Alphabet("abcdefghijklmnopqrstuvwxyz");
         public static readonly Alphabet Uppercase = new Alphabet("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
         public static readonly Alphabet Protein = new Alphabet("ACDEFGHIKLMNPQRSTVWY");
+
         public static readonly Alphabet Base64 = new Alphabet("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/");
+
         public static readonly Alphabet ASCII = new Alphabet(128);
         public static readonly Alphabet ExtendedASCII = new Alphabet(256);
         public static readonly Alphabet Unicode16 = new Alphabet(65536);
@@ -79,9 +81,13 @@ namespace algs4.algs4
 
             // can't use char since r can be as big as 65,536
             for (int i = 0; i < r; i++)
+            {
                 _alphabet[i] = (char)i;
+            }
             for (int i = 0; i < r; i++)
+            {
                 _inverse[i] = i;
+            }
         }
 
         /// <summary>

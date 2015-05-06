@@ -273,7 +273,6 @@ namespace algs4.algs4
             return Balance(h);
         }
 
-
         /// <summary>
         /// Delete the key-value pair with the maximum key
         /// </summary>
@@ -600,7 +599,6 @@ namespace algs4.algs4
         /// <param name="x"></param>
         /// <param name="key"></param>
         /// <returns></returns>
-
         private Node Floor(Node x, TKey key)
         {
             if (x == null)
@@ -668,7 +666,6 @@ namespace algs4.algs4
             return x;
         }
 
-
         /// <summary>
         /// The key of rank k
         /// </summary>
@@ -722,7 +719,10 @@ namespace algs4.algs4
         /// <returns></returns>
         private int Rank(TKey key, Node x)
         {
-            if (x == null) return 0;
+            if (x == null)
+            {
+                return 0;
+            }
             int cmp = key.CompareTo(x.Key);
             if (cmp < 0)
             {
@@ -818,11 +818,26 @@ namespace algs4.algs4
         /// <returns></returns>
         public bool Check()
         {
-            if (!IsBst()) StdOut.PrintLn("Not in symmetric order");
-            if (!IsSizeConsistent()) StdOut.PrintLn("Subtree counts not consistent");
-            if (!IsRankConsistent()) StdOut.PrintLn("Ranks not consistent");
-            if (!Is23()) StdOut.PrintLn("Not a 2-3 tree");
-            if (!IsBalanced()) StdOut.PrintLn("Not balanced");
+            if (!IsBst())
+            {
+                StdOut.PrintLn("Not in symmetric order");
+            }
+            if (!IsSizeConsistent())
+            {
+                StdOut.PrintLn("Subtree counts not consistent");
+            }
+            if (!IsRankConsistent())
+            {
+                StdOut.PrintLn("Ranks not consistent");
+            }
+            if (!Is23())
+            {
+                StdOut.PrintLn("Not a 2-3 tree");
+            }
+            if (!IsBalanced())
+            {
+                StdOut.PrintLn("Not balanced");
+            }
             return IsBst() && IsSizeConsistent() && IsRankConsistent() && Is23() && IsBalanced();
         }
 

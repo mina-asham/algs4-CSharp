@@ -8,7 +8,7 @@ namespace algs4.algs4
 {
     public class AdjMatrixEdgeWeightedDigraph
     {
-        private int _v;
+        private readonly int _v;
         private int _e;
         private readonly DirectedEdge[][] _adj;
 

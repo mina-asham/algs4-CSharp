@@ -15,6 +15,7 @@ namespace algs4.algs4
                 _v = v;
                 _w = w;
             }
+
             public int CompareTo(Edge that)
             {
                 if (_v < that._v)
@@ -339,7 +340,10 @@ namespace algs4.algs4
         {
             Digraph g = new Digraph(v);
             int[] vertices = new int[v];
-            for (int i = 0; i < v; i++) vertices[i] = i;
+            for (int i = 0; i < v; i++)
+            {
+                vertices[i] = i;
+            }
             StdRandom.Shuffle(vertices);
             for (int i = 1; i < v; i++)
             {

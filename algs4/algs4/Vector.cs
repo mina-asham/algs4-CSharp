@@ -5,7 +5,6 @@ namespace algs4.algs4
 {
     public class Vector
     {
-
         /// <summary>
         /// Length of the vector
         /// </summary>

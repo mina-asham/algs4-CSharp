@@ -131,5 +131,4 @@ namespace algs4.stdlib
             BinaryStdOut.Flush();
         }
     }
-
 }

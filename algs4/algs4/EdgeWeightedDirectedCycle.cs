@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using algs4.stdlib;
 
 namespace algs4.algs4
@@ -60,7 +59,10 @@ namespace algs4.algs4
                 int w = e.To();
 
                 // short circuit if directed cycle found
-                if (_cycle != null) return;
+                if (_cycle != null)
+                {
+                    return;
+                }
 
                 //found new vertex, so recur
                 if (!_marked[w])
@@ -69,7 +71,7 @@ namespace algs4.algs4
                     DFS(g, w);
                 }
 
-                    // trace back directed cycle
+                // trace back directed cycle
                 else if (_onStack[w])
                 {
                     _cycle = new Stack<DirectedEdge>();
@@ -118,7 +120,10 @@ namespace algs4.algs4
                 DirectedEdge first = null, last = null;
                 foreach (DirectedEdge e in Cycle())
                 {
-                    if (first == null) first = e;
+                    if (first == null)
+                    {
+                        first = e;
+                    }
                     if (last != null)
                     {
                         if (last.To() != e.From())

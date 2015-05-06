@@ -13,7 +13,6 @@ namespace algs4.stdlib
 {
     public static class StdDraw
     {
-
         #region Pre-defined colors
 
         public static readonly Color Black = Color.Black;
@@ -37,6 +36,7 @@ namespace algs4.stdlib
         /// It is Pantone 300U. The RGB values are approximately (9, 90, 166).
         /// </summary>
         public static readonly Color BookBlue = Color.FromArgb(9, 90, 166);
+
         public static readonly Color BookLightBlue = Color.FromArgb(103, 198, 243);
 
         /// <summary>
@@ -64,6 +64,7 @@ namespace algs4.stdlib
         /// Default canvas size is DefaultSize-by-DefaultSize
         /// </summary>
         private const int DefaultSize = 512;
+
         private static int _width = DefaultSize;
         private static int _height = DefaultSize;
 
@@ -117,6 +118,7 @@ namespace algs4.stdlib
         /// Double buffered graphics
         /// </summary>
         private static Bitmap _offscreenImage, _onscreenImage;
+
         private static Graphics _offscreen, _onscreen;
 
         /// <summary>
@@ -604,6 +606,7 @@ namespace algs4.stdlib
             }
             Draw();
         }
+
         /// <summary>
         /// Draw an ellipse with given semimajor and semiminor axes, centered on (x, y).
         /// </summary>

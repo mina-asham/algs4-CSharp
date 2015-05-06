@@ -224,7 +224,9 @@ namespace algs4.stdlib
             string[] fields = ReadAllStrings();
             int[] vals = new int[fields.Length];
             for (int i = 0; i < fields.Length; i++)
+            {
                 vals[i] = int.Parse(fields[i]);
+            }
             return vals;
         }
 
@@ -238,7 +240,9 @@ namespace algs4.stdlib
             string[] fields = ReadAllStrings();
             double[] vals = new double[fields.Length];
             for (int i = 0; i < fields.Length; i++)
+            {
                 vals[i] = double.Parse(fields[i]);
+            }
             return vals;
         }
 

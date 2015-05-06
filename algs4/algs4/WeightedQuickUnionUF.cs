@@ -137,7 +137,5 @@ namespace algs4.algs4
             }
             StdOut.PrintLn(uf.Count() + " components");
         }
-
     }
-
 }

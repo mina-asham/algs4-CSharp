@@ -128,7 +128,10 @@ namespace algs4.algs4
             {
                 int p = StdIn.ReadInt();
                 int q = StdIn.ReadInt();
-                if (uf.Connected(p, q)) continue;
+                if (uf.Connected(p, q))
+                {
+                    continue;
+                }
                 uf.Union(p, q);
                 StdOut.PrintLn(p + " " + q);
             }

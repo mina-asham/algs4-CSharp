@@ -29,7 +29,6 @@ namespace algs4.algs4
             /// </summary>
             public Node<TValueInner> Left { get; set; }
 
-
             /// <summary>
             /// Middle subtries
             /// </summary>
@@ -229,7 +228,10 @@ namespace algs4.algs4
         {
             Queue<string> queue = new Queue<string>();
             Node<TValue> x = Get(_root, prefix, 0);
-            if (x == null) return queue;
+            if (x == null)
+            {
+                return queue;
+            }
             if (typeof(TValue).IsValueType || !Equals(x.Val, default(TValue)))
             {
                 queue.Enqueue(prefix);
@@ -246,7 +248,10 @@ namespace algs4.algs4
         /// <param name="queue"></param>
         private void Collect(Node<TValue> x, StringBuilder prefix, Queue<string> queue)
         {
-            if (x == null) return;
+            if (x == null)
+            {
+                return;
+            }
             Collect(x.Left, prefix, queue);
             if (typeof(TValue).IsValueType || !Equals(x.Val, default(TValue)))
             {
@@ -272,7 +277,10 @@ namespace algs4.algs4
 
         private static void Collect(Node<TValue> x, StringBuilder prefix, int i, string pattern, Queue<string> queue)
         {
-            if (x == null) return;
+            if (x == null)
+            {
+                return;
+            }
             char c = pattern[i];
             if (c == '.' || c < x.C)
             {

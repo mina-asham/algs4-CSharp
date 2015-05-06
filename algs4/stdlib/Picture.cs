@@ -243,7 +243,6 @@ namespace algs4.stdlib
             }
             if (_isOriginUpperLeft)
             {
-
             }
             else
             {
