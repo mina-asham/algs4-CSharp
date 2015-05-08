@@ -53,6 +53,7 @@
     <Compile Include="algs4\BST.cs" />
     <Compile Include="algs4\Cat.cs" />
     <Compile Include="algs4\Count.cs" />
+    <Compile Include="algs4\Counter.cs" />
     <Compile Include="algs4\DepthFirstOrder.cs" />
     <Compile Include="algs4\Digraph.cs" />
     <Compile Include="algs4\DigraphGenerator.cs" />
@@ -69,6 +70,8 @@
     <Compile Include="algs4\Graph.cs" />
     <Compile Include="algs4\GraphGenerator.cs" />
     <Compile Include="algs4\IndexMinPQ.cs" />
+    <Compile Include="algs4\Interval1D.cs" />
+    <Compile Include="algs4\Interval2D.cs" />
     <Compile Include="algs4\MinPQ.cs" />
     <Compile Include="algs4\PictureDump.cs" />
     <Compile Include="algs4\Point2D.cs" />
