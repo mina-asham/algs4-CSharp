@@ -56,6 +56,7 @@
     <Compile Include="algs4\DepthFirstOrder.cs" />
     <Compile Include="algs4\Digraph.cs" />
     <Compile Include="algs4\DigraphGenerator.cs" />
+    <Compile Include="algs4\DijkstraSP.cs" />
     <Compile Include="algs4\DirectedCycle.cs" />
     <Compile Include="algs4\DirectedDFS.cs" />
     <Compile Include="algs4\DirectedEdge.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="algs4\FlowNetwork.cs" />
     <Compile Include="algs4\Graph.cs" />
     <Compile Include="algs4\GraphGenerator.cs" />
+    <Compile Include="algs4\IndexMinPQ.cs" />
     <Compile Include="algs4\MinPQ.cs" />
     <Compile Include="algs4\PictureDump.cs" />
     <Compile Include="algs4\Point2D.cs" />
