@@ -73,6 +73,7 @@
     <Compile Include="algs4\Interval1D.cs" />
     <Compile Include="algs4\Interval2D.cs" />
     <Compile Include="algs4\MinPQ.cs" />
+    <Compile Include="algs4\Particle.cs" />
     <Compile Include="algs4\PictureDump.cs" />
     <Compile Include="algs4\Point2D.cs" />
     <Compile Include="algs4\Queue.cs" />
