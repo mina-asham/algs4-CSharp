@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Text.RegularExpressions;
 using algs4.stdlib;
 
@@ -213,6 +214,9 @@ namespace algs4.algs4
             {
                 int index = suffix.Index(i);
                 string ith = "\"" + s.Substring(index, Math.Min(index + 50, s.Length)) + "\"";
+
+                Debug.Assert(s.Substring(index).Equals(suffix.Select(i)));
+
                 int rank = suffix.Rank(s.Substring(index));
                 if (i == 0)
                 {

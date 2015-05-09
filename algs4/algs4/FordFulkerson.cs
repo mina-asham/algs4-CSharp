@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using algs4.stdlib;
 
 namespace algs4.algs4
@@ -59,6 +60,9 @@ namespace algs4.algs4
 
                 _value += bottle;
             }
+
+            // check optimality conditions
+            Debug.Assert(Check(g, s, t));
         }
 
         /// <summary>
@@ -220,7 +224,7 @@ namespace algs4.algs4
         /// <param name="s"></param>
         /// <param name="t"></param>
         /// <returns></returns>
-        public bool Check(FlowNetwork g, int s, int t)
+        private bool Check(FlowNetwork g, int s, int t)
         {
             // check that flow is feasible
             if (!IsFeasible(g, s, t))

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using algs4.stdlib;
 
 namespace algs4.algs4
@@ -63,6 +64,8 @@ namespace algs4.algs4
                 _onQueue[v] = false;
                 Relax(g, v);
             }
+
+            Debug.Assert(Check(g, s));
         }
 
         /// <summary>
@@ -187,7 +190,7 @@ namespace algs4.algs4
         /// <param name="g"></param>
         /// <param name="s"></param>
         /// <returns></returns>
-        public bool Check(EdgeWeightedDigraph g, int s)
+        private bool Check(EdgeWeightedDigraph g, int s)
         {
             // has a negative cycle
             if (HasNegativeCycle())

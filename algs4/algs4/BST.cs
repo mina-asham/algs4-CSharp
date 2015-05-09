@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using algs4.stdlib;
 
 namespace algs4.algs4
@@ -139,6 +140,8 @@ namespace algs4.algs4
                 return;
             }
             _root = Put(_root, key, val);
+
+            Debug.Assert(Check());
         }
 
         private Node Put(Node x, TKey key, TValue val)
@@ -173,6 +176,8 @@ namespace algs4.algs4
                 throw new InvalidOperationException("Symbol table underflow");
             }
             _root = DeleteMin(_root);
+
+            Debug.Assert(Check());
         }
 
         private Node DeleteMin(Node x)
@@ -193,6 +198,8 @@ namespace algs4.algs4
                 throw new InvalidOperationException("Symbol table underflow");
             }
             _root = DeleteMax(_root);
+
+            Debug.Assert(Check());
         }
 
         private Node DeleteMax(Node x)
@@ -209,6 +216,8 @@ namespace algs4.algs4
         public void Delete(TKey key)
         {
             _root = Delete(_root, key);
+
+            Debug.Assert(Check());
         }
 
         private Node Delete(Node x, TKey key)
@@ -514,7 +523,7 @@ namespace algs4.algs4
 
         #region Check integrity of BST data structure
 
-        public bool Check()
+        private bool Check()
         {
             if (!IsBST())
             {

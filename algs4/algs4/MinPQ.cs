@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using algs4.stdlib;
 
 namespace algs4.algs4
@@ -57,7 +58,8 @@ namespace algs4.algs4
         /// Initializes an empty priority queue using the given comparator.
         /// </summary>
         /// <param name="comparator">the order to use when comparing keys</param>
-        public MinPQ(Comparer<TKey> comparator) : this(1, comparator)
+        public MinPQ(Comparer<TKey> comparator)
+            : this(1, comparator)
         {
         }
 
@@ -78,6 +80,8 @@ namespace algs4.algs4
             {
                 Sink(k);
             }
+
+            Debug.Assert(IsMinHeap());
         }
 
         /// <summary>
@@ -117,6 +121,7 @@ namespace algs4.algs4
         /// <param name="capacity"></param>
         private void Resize(int capacity)
         {
+            Debug.Assert(capacity > _n);
             TKey[] temp = new TKey[capacity];
             for (int i = 1; i <= _n; i++)
             {
@@ -140,6 +145,8 @@ namespace algs4.algs4
             // add x, and percolate it up to maintain heap invariant
             _pq[++_n] = x;
             Swim(_n);
+
+            Debug.Assert(IsMinHeap());
         }
 
         /// <summary>
@@ -163,6 +170,8 @@ namespace algs4.algs4
             {
                 Resize(_pq.Length / 2);
             }
+
+            Debug.Assert(IsMinHeap());
             return min;
         }
 
@@ -219,7 +228,7 @@ namespace algs4.algs4
         /// Is pq[1..N] a min heap?
         /// </summary>
         /// <returns></returns>
-        public bool IsMinHeap()
+        private bool IsMinHeap()
         {
             return IsMinHeap(1);
         }

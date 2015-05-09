@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using algs4.stdlib;
 
 namespace algs4.algs4
@@ -65,6 +66,8 @@ namespace algs4.algs4
                 _hull.Push(top);
                 _hull.Push(points[i]);
             }
+
+            Debug.Assert(IsConvex());
         }
 
         /// <summary>
@@ -85,7 +88,7 @@ namespace algs4.algs4
         /// Check that boundary of hull is strictly convex
         /// </summary>
         /// <returns></returns>
-        public bool IsConvex()
+        private bool IsConvex()
         {
             int n = _hull.Size();
             if (n <= 2)

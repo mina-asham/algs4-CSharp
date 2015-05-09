@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 using algs4.stdlib;
 
 namespace algs4.algs4
@@ -34,6 +35,8 @@ namespace algs4.algs4
             _distTo = new int[g.V()];
             _edgeTo = new int[g.V()];
             BFS(g, s);
+
+            Debug.Assert(Check(g, s));
         }
 
         /// <summary>
@@ -165,7 +168,7 @@ namespace algs4.algs4
         /// <param name="g"></param>
         /// <param name="s"></param>
         /// <returns></returns>
-        public bool Check(Graph g, int s)
+        private bool Check(Graph g, int s)
         {
             // check that the distance of s = 0
             if (_distTo[s] != 0)

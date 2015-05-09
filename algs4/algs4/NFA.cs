@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using algs4.stdlib;
 
 namespace algs4.algs4
@@ -51,6 +52,10 @@ namespace algs4.algs4
                     else if (regexp[or] == '(')
                     {
                         lp = or;
+                    }
+                    else
+                    {
+                        Debug.Assert(false);
                     }
                 }
 

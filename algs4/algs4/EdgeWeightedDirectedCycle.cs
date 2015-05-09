@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using algs4.stdlib;
 
 namespace algs4.algs4
@@ -43,6 +44,9 @@ namespace algs4.algs4
                     DFS(g, v);
                 }
             }
+
+            // check that digraph has a cycle
+            Debug.Assert(Check());
         }
 
         /// <summary>
@@ -111,7 +115,7 @@ namespace algs4.algs4
         /// Certify that digraph is either acyclic or has a directed cycle
         /// </summary>
         /// <returns></returns>
-        public bool Check()
+        private bool Check()
         {
             // edge-weighted digraph is cyclic
             if (HasCycle())
