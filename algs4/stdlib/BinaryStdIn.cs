@@ -56,7 +56,7 @@ namespace algs4.stdlib
         /// Read the remaining bytes of data from standard input and return as a string. 
         /// </summary>
         /// <returns>the remaining bytes of data from standard input as a string</returns>
-        public static string Readstring()
+        public static string ReadString()
         {
             return Input.ReadString();
         }
