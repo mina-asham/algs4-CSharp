@@ -212,7 +212,7 @@ namespace algs4.algs4
             {
                 if (sp.HasPathTo(t))
                 {
-                    StdOut.PrintF("%d to %d (%.2f)  ", s, t, sp.DistTo(t));
+                    StdOut.PrintF("{0} to {1} ({2:0.00})  ", s, t, sp.DistTo(t));
                     if (sp.HasPathTo(t))
                     {
                         foreach (DirectedEdge e in sp.PathTo(t))
@@ -224,7 +224,7 @@ namespace algs4.algs4
                 }
                 else
                 {
-                    StdOut.PrintF("%d to %d         no path\n", s, t);
+                    StdOut.PrintF("{0} to {1}         no path\n", s, t);
                 }
             }
         }
