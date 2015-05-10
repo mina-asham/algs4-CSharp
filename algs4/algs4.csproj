@@ -48,9 +48,14 @@
     <Compile Include="algs4\BinaryDump.cs" />
     <Compile Include="algs4\BinarySearch.cs" />
     <Compile Include="algs4\BinarySearchST.cs" />
+    <Compile Include="algs4\Bipartite.cs" />
     <Compile Include="algs4\BlackFilter.cs" />
+    <Compile Include="algs4\BoruvkaMST.cs" />
+    <Compile Include="algs4\BoyerMoore.cs" />
+    <Compile Include="algs4\BreadthFirstDirectedPaths.cs" />
     <Compile Include="algs4\BreadthFirthPaths.cs" />
     <Compile Include="algs4\BST.cs" />
+    <Compile Include="algs4\BTree.cs" />
     <Compile Include="algs4\Cat.cs" />
     <Compile Include="algs4\Complex.cs" />
     <Compile Include="algs4\Count.cs" />
