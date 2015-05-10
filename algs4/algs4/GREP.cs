@@ -1,5 +1,4 @@
-﻿using System;
-using algs4.stdlib;
+﻿using algs4.stdlib;
 
 namespace algs4.algs4
 {
