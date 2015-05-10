@@ -105,7 +105,7 @@ namespace algs4.algs4
             }
 
             StdOut.PrintLn(counter);
-            StdOut.PrintF("box area = %.2f\n", box.Area());
+            StdOut.PrintF("box area = {0:0.00}\n", box.Area());
         }
     }
 }

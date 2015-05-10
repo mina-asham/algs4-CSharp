@@ -173,7 +173,7 @@ namespace algs4.algs4
             {
                 if (bfs.HasPathTo(v))
                 {
-                    StdOut.PrintF("%d to %d (%d):  ", s, v, bfs.DistTo(v));
+                    StdOut.PrintF("{0} to {1} ({2}):  ", s, v, bfs.DistTo(v));
                     foreach (int x in bfs.PathTo(v))
                     {
                         if (x == s)
@@ -190,7 +190,7 @@ namespace algs4.algs4
 
                 else
                 {
-                    StdOut.PrintF("%d to %d (-):  not connected\n", s, v);
+                    StdOut.PrintF("{0} to {1} (-):  not connected\n", s, v);
                 }
             }
         }
