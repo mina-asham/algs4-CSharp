@@ -66,9 +66,9 @@ namespace algs4.algs4
         /// Sample client
         /// </summary>
         /// <param name="args"></param>
-        public static void RunMain(String[] args)
+        public static void RunMain(string[] args)
         {
-            int N = 3;
+            const int n = 3;
             double[][] a =
             {
                 new[] { 0.0, 1.0, 1.0 },
@@ -79,7 +79,7 @@ namespace algs4.algs4
             double[] x = LSolve(a, b);
 
             // print results
-            for (int i = 0; i < N; i++)
+            for (int i = 0; i < n; i++)
             {
                 StdOut.PrintLn(x[i]);
             }

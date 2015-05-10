@@ -17,7 +17,7 @@ namespace algs4.algs4
 
         public static void Compress()
         {
-            String input = BinaryStdIn.ReadString();
+            string input = BinaryStdIn.ReadString();
             TST<int> st = new TST<int>();
             for (int i = 0; i < R; i++)
             {
@@ -27,7 +27,7 @@ namespace algs4.algs4
 
             while (input.Length > 0)
             {
-                String s = st.LongestPrefixOf(input); // Find max prefix match s.
+                string s = st.LongestPrefixOf(input); // Find max prefix match s.
                 BinaryStdOut.Write(st.Get(s)); // Print s's encoding.
                 int t = s.Length;
                 if (t < input.Length && code < L) // Add s to symbol table.
@@ -42,7 +42,7 @@ namespace algs4.algs4
 
         public static void Expand()
         {
-            String[] st = new String[L];
+            string[] st = new string[L];
             int i; // next available codeword value
 
             // initialize symbol table with all 1-character strings
@@ -57,7 +57,7 @@ namespace algs4.algs4
             {
                 return; // expanded message is empty string
             }
-            String val = st[codeword];
+            string val = st[codeword];
 
             while (true)
             {
@@ -67,7 +67,7 @@ namespace algs4.algs4
                 {
                     break;
                 }
-                String s = st[codeword];
+                string s = st[codeword];
                 if (i == codeword)
                 {
                     s = val + val[0]; // special case hack
@@ -81,7 +81,7 @@ namespace algs4.algs4
             BinaryStdOut.Close();
         }
 
-        public static void RunMain(String[] args)
+        public static void RunMain(string[] args)
         {
             if (args[0] == "-")
             {
