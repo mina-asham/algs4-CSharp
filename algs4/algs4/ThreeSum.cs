@@ -2,7 +2,7 @@
 
 namespace algs4.algs4
 {
-    public class ThreeSum
+    public static class ThreeSum
     {
         /// <summary>
         /// Prints to standard output the (i, j, k) with i &lt; j &lt; k such that a[i] + a[j] + a[k] == 0.

@@ -367,7 +367,7 @@ namespace algs4.algs4
         /// </summary>
         /// <param name="other">the other point</param>
         /// <returns>true if this point equals the other point; false otherwise</returns>
-        public override bool Equals(Object other)
+        public override bool Equals(object other)
         {
             if (other == this)
             {

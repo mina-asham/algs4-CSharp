@@ -126,15 +126,15 @@ namespace algs4.algs4
                 {
                     a.BounceOff(b); // particle-particle collision
                 }
-                else if (a != null && b == null)
+                else if (a != null)
                 {
                     a.BounceOffVerticalWall(); // particle-wall collision
                 }
-                else if (a == null && b != null)
+                else if (b != null)
                 {
                     b.BounceOffHorizontalWall(); // particle-wall collision
                 }
-                else if (a == null && b == null)
+                else
                 {
                     Redraw(limit); // redraw event
                 }

@@ -20,7 +20,7 @@ namespace algs4.algs4
         /// <summary>
         /// Priority queue of vertices
         /// </summary>
-        private readonly IndexMinPQ<Double> _pq;
+        private readonly IndexMinPQ<double> _pq;
 
         /// <summary>
         /// Computes a shortest paths tree from s to every other vertex in
@@ -47,7 +47,7 @@ namespace algs4.algs4
             _distTo[s] = 0.0;
 
             // relax vertices in order of distance from s
-            _pq = new IndexMinPQ<Double>(g.V());
+            _pq = new IndexMinPQ<double>(g.V());
             _pq.Insert(s, _distTo[s]);
             while (!_pq.IsEmpty())
             {

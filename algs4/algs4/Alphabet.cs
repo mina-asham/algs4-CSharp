@@ -43,7 +43,7 @@ namespace algs4.algs4
         public Alphabet(string alpha)
         {
             // check that alphabet contains no duplicate chars
-            bool[] unicode = new bool[Char.MaxValue];
+            bool[] unicode = new bool[char.MaxValue];
             for (int i = 0; i < alpha.Length; i++)
             {
                 char c = alpha[i];
@@ -56,7 +56,7 @@ namespace algs4.algs4
 
             _alphabet = alpha.ToCharArray();
             _r = alpha.Length;
-            _inverse = new int[Char.MaxValue];
+            _inverse = new int[char.MaxValue];
             for (int i = 0; i < _inverse.Length; i++)
             {
                 _inverse[i] = -1;

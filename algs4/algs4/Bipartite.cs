@@ -121,14 +121,14 @@ namespace algs4.algs4
             return _cycle;
         }
 
-        private bool Check(Graph G)
+        private bool Check(Graph g)
         {
             // graph is bipartite
             if (_isBipartite)
             {
-                for (int v = 0; v < G.V(); v++)
+                for (int v = 0; v < g.V(); v++)
                 {
-                    foreach (int w in G.Adj(v))
+                    foreach (int w in g.Adj(v))
                     {
                         if (_color[v] == _color[w])
                         {
@@ -169,42 +169,42 @@ namespace algs4.algs4
         public static void RunMain(string[] args)
         {
             // create random bipartite graph with V vertices and E edges; then add F random edges
-            int V = int.Parse(args[0]);
-            int E = int.Parse(args[1]);
-            int F = int.Parse(args[2]);
+            int v = int.Parse(args[0]);
+            int e = int.Parse(args[1]);
+            int f = int.Parse(args[2]);
 
-            Graph G = new Graph(V);
-            int[] vertices = new int[V];
-            for (int i = 0; i < V; i++)
+            Graph g = new Graph(v);
+            int[] vertices = new int[v];
+            for (int i = 0; i < v; i++)
             {
                 vertices[i] = i;
             }
             StdRandom.Shuffle(vertices);
-            for (int i = 0; i < E; i++)
+            for (int i = 0; i < e; i++)
             {
-                int v = StdRandom.Uniform(V / 2);
-                int w = StdRandom.Uniform(V / 2);
-                G.AddEdge(vertices[v], vertices[V / 2 + w]);
+                int vFrom = StdRandom.Uniform(v / 2);
+                int wTo = StdRandom.Uniform(v / 2);
+                g.AddEdge(vertices[vFrom], vertices[v / 2 + wTo]);
             }
 
             // add F extra edges
             Random random = new Random();
-            for (int i = 0; i < F; i++)
+            for (int i = 0; i < f; i++)
             {
-                int v = (int)(random.NextDouble() * V);
-                int w = (int)(random.NextDouble() * V);
-                G.AddEdge(v, w);
+                int vFrom = (int)(random.NextDouble() * v);
+                int wFrom = (int)(random.NextDouble() * v);
+                g.AddEdge(vFrom, wFrom);
             }
 
-            StdOut.PrintLn(G);
+            StdOut.PrintLn(g);
 
-            Bipartite b = new Bipartite(G);
+            Bipartite b = new Bipartite(g);
             if (b.IsBipartite())
             {
                 StdOut.PrintLn("Graph is bipartite");
-                for (int v = 0; v < G.V(); v++)
+                for (int vertex = 0; vertex < g.V(); vertex++)
                 {
-                    StdOut.PrintLn(v + ": " + b.Color(v));
+                    StdOut.PrintLn(vertex + ": " + b.Color(vertex));
                 }
             }
             else

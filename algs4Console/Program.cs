@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace algs4Console
 {
-    class Program
+    static class Program
     {
         /// <summary>
         /// Possible templates to extract RunMain methods from, usually class name is the name of the algorithm

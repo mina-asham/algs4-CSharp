@@ -209,7 +209,7 @@ namespace algs4.algs4
         /// </summary>
         /// <param name="x"></param>
         /// <returns>true if this date equals x; false otherwise</returns>
-        public override bool Equals(Object x)
+        public override bool Equals(object x)
         {
             if (x == this)
             {
