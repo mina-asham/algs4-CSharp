@@ -87,8 +87,10 @@
     <Compile Include="algs4\FileIndex.cs" />
     <Compile Include="algs4\FlowEdge.cs" />
     <Compile Include="algs4\FlowNetwork.cs" />
+    <Compile Include="algs4\FloydWarshall.cs" />
     <Compile Include="algs4\FordFulkerson.cs" />
     <Compile Include="algs4\FrequencyCounter.cs" />
+    <Compile Include="algs4\GabowSCC.cs" />
     <Compile Include="algs4\GaussianElimination.cs" />
     <Compile Include="algs4\GrahamScan.cs" />
     <Compile Include="algs4\Graph.cs" />
@@ -96,11 +98,17 @@
     <Compile Include="algs4\GREP.cs" />
     <Compile Include="algs4\Heap.cs" />
     <Compile Include="algs4\HexDump.cs" />
+    <Compile Include="algs4\Huffman.cs" />
+    <Compile Include="algs4\IndexMaxPQ.cs" />
     <Compile Include="algs4\IndexMinPQ.cs" />
+    <Compile Include="algs4\Insertion.cs" />
     <Compile Include="algs4\InsertionX.cs" />
     <Compile Include="algs4\Interval1D.cs" />
     <Compile Include="algs4\Interval2D.cs" />
+    <Compile Include="algs4\KMP.cs" />
     <Compile Include="algs4\Knuth.cs" />
+    <Compile Include="algs4\KosarajuSharirSCC.cs" />
+    <Compile Include="algs4\KruskalMST.cs" />
     <Compile Include="algs4\KWIK.cs" />
     <Compile Include="algs4\LongestCommonSubstring.cs" />
     <Compile Include="algs4\LookupIndex.cs" />
@@ -122,6 +130,7 @@
     <Compile Include="algs4\RunLength.cs" />
     <Compile Include="algs4\SequentialSearchST.cs" />
     <Compile Include="algs4\Set.cs" />
+    <Compile Include="algs4\Shell.cs" />
     <Compile Include="algs4\ST.cs" />
     <Compile Include="algs4\Stack.cs" />
     <Compile Include="algs4\StaticSETofInts.cs" />
@@ -139,6 +148,7 @@
     <Compile Include="algs4\LookupCSV.cs" />
     <Compile Include="algs4\LRS.cs" />
     <Compile Include="algs4\DepthFirstPaths.cs" />
+    <Compile Include="algs4\FFTUtil.cs" />
     <Compile Include="stdlib\Picture.cs" />
     <Compile Include="stdlib\StdDraw.cs" />
     <Compile Include="algs4\Stopwatch.cs" />
