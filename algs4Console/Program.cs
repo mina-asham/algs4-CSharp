@@ -4,14 +4,14 @@ using System.Reflection;
 
 namespace algs4Console
 {
-    static class Program
+    internal static class Program
     {
         /// <summary>
         /// Possible templates to extract RunMain methods from, usually class name is the name of the algorithm
         /// </summary>
         private static readonly string[] AssemblyTemplates =
         {
-            "algs4.algs4.{0}`1[System.Object], algs4" ,
+            "algs4.algs4.{0}`1[System.Object], algs4",
             "algs4.algs4.{0}, algs4",
             "algs4.stdlib.{0}, algs4"
         };
@@ -26,7 +26,7 @@ namespace algs4Console
         /// passed in the first argument, and passes the rest of the arguments
         /// </summary>
         /// <param name="args">Main arguments</param>
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             // Parse arguments
             if (args.Length == 0)

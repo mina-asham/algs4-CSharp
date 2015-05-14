@@ -129,7 +129,7 @@ namespace algs4.algs4
                     DFS(g, v, w);
                 }
 
-                    // check for cycle (but disregard reverse of edge leading to v)
+                // check for cycle (but disregard reverse of edge leading to v)
                 else if (w != u)
                 {
                     _cycle = new Stack<int>();

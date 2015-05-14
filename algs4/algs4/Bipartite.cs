@@ -72,7 +72,7 @@ namespace algs4.algs4
                     DFS(g, w);
                 }
 
-                    // if v-w create an odd-length cycle, find it
+                // if v-w create an odd-length cycle, find it
                 else if (_color[w] == _color[v])
                 {
                     _isBipartite = false;
