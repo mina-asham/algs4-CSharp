@@ -160,7 +160,7 @@ namespace algs4.algs4
             {
                 StdOut.PrintLn(e);
             }
-            StdOut.PrintF("%.5f\n", mst.Weight());
+            StdOut.PrintF("{0:0.00000}\n", mst.Weight());
         }
     }
 }
