@@ -110,10 +110,17 @@
     <Compile Include="algs4\KosarajuSharirSCC.cs" />
     <Compile Include="algs4\KruskalMST.cs" />
     <Compile Include="algs4\KWIK.cs" />
+    <Compile Include="algs4\LazyPrimMST.cs" />
+    <Compile Include="algs4\LinearProbingHashST.cs" />
+    <Compile Include="algs4\LinearRegression.cs" />
+    <Compile Include="algs4\LinkedBag.cs" />
+    <Compile Include="algs4\LinkedQueue.cs" />
+    <Compile Include="algs4\LinkedStack.cs" />
     <Compile Include="algs4\LongestCommonSubstring.cs" />
     <Compile Include="algs4\LookupIndex.cs" />
     <Compile Include="algs4\LSD.cs" />
     <Compile Include="algs4\LZW.cs" />
+    <Compile Include="algs4\MaxPQ.cs" />
     <Compile Include="algs4\MergeBU.cs" />
     <Compile Include="algs4\MinPQ.cs" />
     <Compile Include="algs4\MSD.cs" />
