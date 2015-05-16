@@ -7,7 +7,12 @@ namespace algs4.algs4
     {
         private const double Epsilon = 1e-10;
 
-        // Gaussian elimination with partial pivoting
+        /// <summary>
+        /// Gaussian elimination with partial pivoting
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         public static double[] LSolve(double[][] a, double[] b)
         {
             int n = b.Length;

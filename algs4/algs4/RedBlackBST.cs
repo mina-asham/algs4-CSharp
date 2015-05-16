@@ -155,7 +155,11 @@ namespace algs4.algs4
             return default(TValue);
         }
 
-        // is there a key-value pair with the given key?
+        /// <summary>
+        /// Is there a key-value pair with the given key?
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public bool Contains(TKey key)
         {
             bool exists;
@@ -527,7 +531,10 @@ namespace algs4.algs4
 
         #region Ordered symbol table methods.
 
-        // the smallest key; null if no such key
+        /// <summary>
+        /// The smallest key; null if no such key
+        /// </summary>
+        /// <returns></returns>
         public TKey Min()
         {
             if (IsEmpty())

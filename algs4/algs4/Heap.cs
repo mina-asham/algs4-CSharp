@@ -64,7 +64,13 @@ namespace algs4.algs4
             pq[j - 1] = swap;
         }
 
-        // is v < w ?
+        /// <summary>
+        /// Is v &lt; w ?
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="v"></param>
+        /// <param name="w"></param>
+        /// <returns></returns>
         private static bool Less<T>(T v, T w) where T : IComparable<T>
         {
             return (v.CompareTo(w) < 0);

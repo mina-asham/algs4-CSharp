@@ -16,10 +16,10 @@ namespace algs4.algs4
             _start = GetThreadTotalProcessorTime();
         }
 
-        /**
-         * Returns the elapsed CPU time (in seconds) since the object was created.
-         */
-
+        /// <summary>
+        /// Returns the elapsed CPU time (in seconds) since the object was created.
+        /// </summary>
+        /// <returns></returns>
         public double ElapsedTime()
         {
             long now = GetThreadTotalProcessorTime();

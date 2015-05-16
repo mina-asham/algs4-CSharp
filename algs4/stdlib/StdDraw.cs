@@ -253,9 +253,7 @@ namespace algs4.stdlib
             return menuBar;
         }
 
-        /*************************************************************************
-         *  User and screen coordinate systems
-         *************************************************************************/
+        #region User and screen coordinate systems
 
         /// <summary>
         /// Set the x-scale to be the default (between 0.0 and 1.0).
@@ -310,6 +308,8 @@ namespace algs4.stdlib
             _ymin = min - Border * size;
             _ymax = max + Border * size;
         }
+
+        #endregion
 
         #region Helper functions that scale from user coordinates to screen coordinates and back
 
@@ -470,9 +470,7 @@ namespace algs4.stdlib
             _font = f;
         }
 
-        /*************************************************************************
-         *  Drawing geometric shapes.
-         *************************************************************************/
+        #region Drawing geometric shapes.
 
         /// <summary>
         /// Draw a line from (x0, y0) to (x1, y1).
@@ -828,9 +826,9 @@ namespace algs4.stdlib
             Draw();
         }
 
-        /*************************************************************************
-         *  Drawing images.
-         *************************************************************************/
+        #endregion
+
+        #region Drawing images.
 
         /// <summary>
         /// Get an image from the given filename
@@ -991,9 +989,9 @@ namespace algs4.stdlib
             Draw();
         }
 
-        /*************************************************************************
-         *  Drawing text.
-         *************************************************************************/
+        #endregion
+
+        #region Drawing text.
 
         /// <summary>
         /// Write the given text string in the current font, centered on (x, y).
@@ -1069,6 +1067,8 @@ namespace algs4.stdlib
             _offscreen.DrawString(s, _font, new SolidBrush(_penColor), xs - ws, ys - hs / 2.0f);
             Draw();
         }
+
+        #endregion
 
         /// <summary>
         /// Display on screen, pause for t milliseconds, and turn on

@@ -180,14 +180,11 @@ namespace algs4.algs4
             ChangeKey(i, key);
         }
 
-        /**
-         * Change the key associated with index i to the specified value.
-         * @param i the index of the key to change
-         * @param key change the key assocated with index i to this key
-         * @throws java.lang.IndexOutOfRangeException unless 0 &le; i < NMAX
-         * @throws java.util.InvalidOperationException no key is associated with index i
-         */
-
+        /// <summary>
+        /// Change the key associated with index i to the specified value.
+        /// </summary>
+        /// <param name="i">the index of the key to change</param>
+        /// <param name="key">change the key assocated with index i to this key</param>
         public void ChangeKey(int i, TKey key)
         {
             if (i < 0 || i >= _nmax)

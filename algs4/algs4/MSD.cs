@@ -155,7 +155,10 @@ namespace algs4.algs4
             return v.Length < w.Length;
         }
 
-        // MSD sort array of integers
+        /// <summary>
+        /// MSD sort array of integers
+        /// </summary>
+        /// <param name="a"></param>
         public static void Sort(int[] a)
         {
             int n = a.Length;

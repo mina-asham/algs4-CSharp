@@ -286,7 +286,9 @@ namespace algs4.algs4
             }
         }
 
-        // compare other points relative to polar angle (between 0 and 2pi) they make with this Point
+        /// <summary>
+        /// Compare other points relative to polar angle (between 0 and 2pi) they make with this Point
+        /// </summary>
         private class PolarOrder : IComparer<Point2D>
         {
             private readonly Point2D _point;

@@ -29,14 +29,21 @@ namespace algs4.algs4
                 Right = right;
             }
 
-            // is the node a leaf node?
+            /// <summary>
+            /// Is the node a leaf node?
+            /// </summary>
+            /// <returns></returns>
             public bool IsLeaf()
             {
                 Debug.Assert((Left == null && Right == null) || (Left != null && Right != null));
                 return (Left == null && Right == null);
             }
 
-            // compare, based on frequency
+            /// <summary>
+            /// Compare, based on frequency
+            /// </summary>
+            /// <param name="that"></param>
+            /// <returns></returns>
             public int CompareTo(Node that)
             {
                 return Freq - that.Freq;

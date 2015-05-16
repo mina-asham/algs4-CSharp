@@ -4,7 +4,9 @@ namespace algs4.algs4
 {
     public class TransitiveClosure
     {
-        // tc[v] = reachable from v
+        /// <summary>
+        /// tc[v] = reachable from v
+        /// </summary>
         private readonly DirectedDFS[] _tc;
 
         /// <summary>
