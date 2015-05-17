@@ -125,7 +125,9 @@
     <Compile Include="algs4\LSD.cs" />
     <Compile Include="algs4\LZW.cs" />
     <Compile Include="algs4\MaxPQ.cs" />
+    <Compile Include="algs4\MergeUtil.cs" />
     <Compile Include="algs4\MergeBU.cs" />
+    <Compile Include="algs4\MergeX.cs" />
     <Compile Include="algs4\MinPQ.cs" />
     <Compile Include="algs4\MSD.cs" />
     <Compile Include="algs4\Multiway.cs" />
