@@ -62,9 +62,11 @@ namespace algs4.algs4
         public void Push(TItem item)
         {
             Node<TItem> oldfirst = _first;
-            _first = new Node<TItem>();
-            _first.Item = item;
-            _first.Next = oldfirst;
+            _first = new Node<TItem>
+            {
+                Item = item,
+                Next = oldfirst
+            };
             _n++;
         }
 

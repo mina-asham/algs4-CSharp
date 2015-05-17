@@ -145,8 +145,7 @@ namespace algs4.algs4
             char c = key[d];
             if (x == null)
             {
-                x = new Node<TValue>();
-                x.C = c;
+                x = new Node<TValue> { C = c };
             }
             if (c < x.C)
             {

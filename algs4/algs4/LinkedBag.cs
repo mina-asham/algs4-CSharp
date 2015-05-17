@@ -59,9 +59,11 @@ namespace algs4.algs4
         public void Add(TItem item)
         {
             Node oldfirst = _first;
-            _first = new Node();
-            _first.Item = item;
-            _first.Next = oldfirst;
+            _first = new Node
+            {
+                Item = item,
+                Next = oldfirst
+            };
             _n++;
         }
 

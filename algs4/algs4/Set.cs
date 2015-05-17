@@ -282,27 +282,28 @@ namespace algs4.algs4
         /// <param name="args">Main arguments</param>
         public static void RunMain(string[] args)
         {
-            Set<string> set = new Set<string>();
-
             // insert some keys
-            set.Add("www.cs.princeton.edu");
-            set.Add("www.cs.princeton.edu"); // overwrite old value
-            set.Add("www.princeton.edu");
-            set.Add("www.math.princeton.edu");
-            set.Add("www.yale.edu");
-            set.Add("www.amazon.com");
-            set.Add("www.simpsons.com");
-            set.Add("www.stanford.edu");
-            set.Add("www.google.com");
-            set.Add("www.ibm.com");
-            set.Add("www.apple.com");
-            set.Add("www.slashdot.com");
-            set.Add("www.whitehouse.gov");
-            set.Add("www.espn.com");
-            set.Add("www.snopes.com");
-            set.Add("www.movies.com");
-            set.Add("www.cnn.com");
-            set.Add("www.iitb.ac.in");
+            Set<string> set = new Set<string>
+            {
+                "www.cs.princeton.edu",
+                "www.cs.princeton.edu", // overwrite old value
+                "www.princeton.edu",
+                "www.math.princeton.edu",
+                "www.yale.edu",
+                "www.amazon.com",
+                "www.simpsons.com",
+                "www.stanford.edu",
+                "www.google.com",
+                "www.ibm.com",
+                "www.apple.com",
+                "www.slashdot.com",
+                "www.whitehouse.gov",
+                "www.espn.com",
+                "www.snopes.com",
+                "www.movies.com",
+                "www.cnn.com",
+                "www.iitb.ac.in"
+            };
 
             StdOut.PrintLn(set.Contains("www.cs.princeton.edu"));
             StdOut.PrintLn(!set.Contains("www.harvardsucks.com"));

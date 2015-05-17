@@ -82,9 +82,11 @@ namespace algs4.algs4
         public void Enqueue(TItem item)
         {
             Node oldlast = _last;
-            _last = new Node();
-            _last.Item = item;
-            _last.Next = null;
+            _last = new Node
+            {
+                Item = item,
+                Next = null
+            };
             if (IsEmpty())
             {
                 _first = _last;
