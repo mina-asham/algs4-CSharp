@@ -86,7 +86,7 @@ namespace algs4.algs4
         }
 
         /// <summary>
-        /// An iterator, doesn't implement remove() since it's optional
+        /// An iterator
         /// </summary>
         private class ArrayIterator : IEnumerator<TItem>
         {

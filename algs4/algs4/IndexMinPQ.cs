@@ -322,7 +322,6 @@ namespace algs4.algs4
         /// <summary>
         /// Returns an iterator that iterates over the keys on the
         /// priority queue in ascending order.
-        /// The iterator doesn't implement remove() since it's optional.
         /// </summary>
         /// <returns>an iterator that iterates over the keys in ascending order</returns>
         public IEnumerator<int> GetEnumerator()
