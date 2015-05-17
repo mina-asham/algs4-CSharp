@@ -146,11 +146,11 @@ namespace algs4.algs4
         {
             Queue<string> results = new Queue<string>();
             Node x = Get(_root, prefix, 0);
-            collect(x, new StringBuilder(prefix), results);
+            Collect(x, new StringBuilder(prefix), results);
             return results;
         }
 
-        private void collect(Node x, StringBuilder prefix, Queue<string> results)
+        private void Collect(Node x, StringBuilder prefix, Queue<string> results)
         {
             if (x == null)
             {
@@ -163,7 +163,7 @@ namespace algs4.algs4
             for (char c = (char)0; c < R; c++)
             {
                 prefix.Append(c);
-                collect(x.Next[c], prefix, results);
+                Collect(x.Next[c], prefix, results);
                 prefix.Remove(prefix.Length - 1, 1);
             }
         }
@@ -178,11 +178,11 @@ namespace algs4.algs4
         public IEnumerable<string> KeysThatMatch(string pattern)
         {
             Queue<string> results = new Queue<string>();
-            collect(_root, new StringBuilder(), pattern, results);
+            Collect(_root, new StringBuilder(), pattern, results);
             return results;
         }
 
-        private void collect(Node x, StringBuilder prefix, string pattern, Queue<string> results)
+        private void Collect(Node x, StringBuilder prefix, string pattern, Queue<string> results)
         {
             if (x == null)
             {
@@ -203,14 +203,14 @@ namespace algs4.algs4
                 for (char ch = (char)0; ch < R; ch++)
                 {
                     prefix.Append(ch);
-                    collect(x.Next[ch], prefix, pattern, results);
+                    Collect(x.Next[ch], prefix, pattern, results);
                     prefix.Remove(prefix.Length - 1, 1);
                 }
             }
             else
             {
                 prefix.Append(c);
-                collect(x.Next[c], prefix, pattern, results);
+                Collect(x.Next[c], prefix, pattern, results);
                 prefix.Remove(prefix.Length - 1, 1);
             }
         }
