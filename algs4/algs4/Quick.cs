@@ -18,7 +18,13 @@ namespace algs4.algs4
             Debug.Assert(IsSorted(a));
         }
 
-        // quicksort the subarray from a[lo] to a[hi]
+        /// <summary>
+        /// Quicksort the subarray from a[lo] to a[hi]
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="a"></param>
+        /// <param name="lo"></param>
+        /// <param name="hi"></param>
         private static void Sort<T>(T[] a, int lo, int hi) where T : IComparable<T>
         {
             if (hi <= lo)

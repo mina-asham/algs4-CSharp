@@ -7,7 +7,7 @@ namespace algs4.algs4
     public class SuffixArrayX
     {
         /// <summary>
-        /// Cutoff to insertion sort (any value between 0 and 12)
+        /// Cutoff to insertion Sort (any value between 0 and 12)
         /// </summary>
         private const int Cutoff = 5;
 
@@ -49,7 +49,7 @@ namespace algs4.algs4
         /// <param name="d"></param>
         private void Sort(int lo, int hi, int d)
         {
-            // cutoff to insertion sort for small subarrays
+            // cutoff to insertion Sort for small subarrays
             if (hi <= lo + Cutoff)
             {
                 Insertion(lo, hi, d);
@@ -184,7 +184,12 @@ namespace algs4.algs4
             return LCP(_index[i], _index[i - 1]);
         }
 
-        // longest common prefix of text[i..N) and text[j..N)
+        /// <summary>
+        /// Longest common prefix of text[i..N) and text[j..N)
+        /// </summary>
+        /// <param name="i"></param>
+        /// <param name="j"></param>
+        /// <returns></returns>
         private int LCP(int i, int j)
         {
             int length = 0;

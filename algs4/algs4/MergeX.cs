@@ -76,7 +76,13 @@ namespace algs4.algs4
             Debug.Assert(IsSorted(a));
         }
 
-        // Sort from a[lo] to a[hi] using insertion Sort
+        /// <summary>
+        /// Sort from a[lo] to a[hi] using insertion Sort
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="a"></param>
+        /// <param name="lo"></param>
+        /// <param name="hi"></param>
         private static void InsertionSort<T>(T[] a, int lo, int hi) where T : IComparable<T>
         {
             for (int i = lo; i <= hi; i++)
