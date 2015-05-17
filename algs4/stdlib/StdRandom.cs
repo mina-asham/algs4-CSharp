@@ -294,13 +294,13 @@ namespace algs4.stdlib
         /// Rearrange the elements of an array in random order.
         /// </summary>
         /// <param name="a"></param>
-        public static void Shuffle(object[] a)
+        public static void Shuffle<T>(T[] a)
         {
             for (int i = 0; i < a.Length; i++)
             {
                 // between i and N-1
                 int r = i + Uniform(a.Length - i);
-                object temp = a[i];
+                T temp = a[i];
                 a[i] = a[r];
                 a[r] = temp;
             }
