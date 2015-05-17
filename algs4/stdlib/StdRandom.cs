@@ -144,11 +144,11 @@ namespace algs4.stdlib
         public static double Gaussian()
         {
             // use the polar form of the Box-Muller transform
-            double r, x, y;
+            double r, x;
             do
             {
                 x = Uniform(-1.0, 1.0);
-                y = Uniform(-1.0, 1.0);
+                double y = Uniform(-1.0, 1.0);
                 r = x * x + y * y;
             } while (r >= 1 || Math.Abs(r) < double.Epsilon);
 
