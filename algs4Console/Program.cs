@@ -11,7 +11,8 @@ namespace algs4Console
         /// </summary>
         private static readonly string[] AssemblyTemplates =
         {
-            "algs4.algs4.{0}`1[System.Object], algs4",
+            "algs4.algs4.{0}`1[System.String], algs4",
+            "algs4.algs4.{0}`2[System.String, System.String], algs4",
             "algs4.algs4.{0}, algs4",
             "algs4.stdlib.{0}, algs4"
         };
