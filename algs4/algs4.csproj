@@ -38,6 +38,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +143,7 @@
     <Compile Include="algs4\Quick.cs" />
     <Compile Include="algs4\QuickUnionUF.cs" />
     <Compile Include="algs4\QuickX.cs" />
+    <Compile Include="algs4\RabinKarp.cs" />
     <Compile Include="algs4\RandomSeq.cs" />
     <Compile Include="algs4\RedBlackBST.cs" />
     <Compile Include="algs4\ResizingArrayBag.cs" />
