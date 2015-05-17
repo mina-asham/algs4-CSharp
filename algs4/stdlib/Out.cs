@@ -260,10 +260,8 @@ namespace algs4.stdlib
         /// <param name="args">Main arguments</param>
         public static void RunMain(string[] args)
         {
-            Out output;
-
             // write to stdout
-            output = new Out();
+            Out output = new Out();
             Console.WriteLine("Test 1");
             output.Close();
 
