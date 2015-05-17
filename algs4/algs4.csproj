@@ -141,6 +141,9 @@
     <Compile Include="algs4\PrimMST.cs" />
     <Compile Include="algs4\Queue.cs" />
     <Compile Include="algs4\Quick.cs" />
+    <Compile Include="algs4\Quick3String.cs" />
+    <Compile Include="algs4\Quick3Way.cs" />
+    <Compile Include="algs4\QuickFindUF.cs" />
     <Compile Include="algs4\QuickUnionUF.cs" />
     <Compile Include="algs4\QuickX.cs" />
     <Compile Include="algs4\RabinKarp.cs" />
