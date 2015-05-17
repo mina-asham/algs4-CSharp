@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GeneralMatrix, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dependencies\GeneralMatrix\GeneralMatrix.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -129,6 +133,7 @@
     <Compile Include="algs4\Particle.cs" />
     <Compile Include="algs4\PictureDump.cs" />
     <Compile Include="algs4\Point2D.cs" />
+    <Compile Include="algs4\PolynomialRegression.cs" />
     <Compile Include="algs4\Queue.cs" />
     <Compile Include="algs4\QuickUnionUF.cs" />
     <Compile Include="algs4\RandomSeq.cs" />
@@ -184,6 +189,8 @@
     <Compile Include="stdlib\UnicodeTest.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dependencies\GeneralMatrix\GeneralMatrix.dll" />
+    <Content Include="dependencies\GeneralMatrix\GeneralMatrix.pdb" />
     <Content Include="stdlib\InTest.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
