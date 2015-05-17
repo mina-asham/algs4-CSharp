@@ -145,6 +145,8 @@
     <Compile Include="algs4\RandomSeq.cs" />
     <Compile Include="algs4\RedBlackBST.cs" />
     <Compile Include="algs4\ResizingArrayBag.cs" />
+    <Compile Include="algs4\ResizingArrayQueue.cs" />
+    <Compile Include="algs4\ResizingArrayStack.cs" />
     <Compile Include="algs4\RunLength.cs" />
     <Compile Include="algs4\Selection.cs" />
     <Compile Include="algs4\SeparateChainingHashST.cs" />
