@@ -182,6 +182,8 @@
     <Compile Include="algs4\LRS.cs" />
     <Compile Include="algs4\DepthFirstPaths.cs" />
     <Compile Include="algs4\FFTUtil.cs" />
+    <Compile Include="stdlib\Draw.cs" />
+    <Compile Include="stdlib\IDrawListener.cs" />
     <Compile Include="stdlib\Picture.cs" />
     <Compile Include="stdlib\StdDraw.cs" />
     <Compile Include="algs4\Stopwatch.cs" />
